@@ -1,0 +1,241 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Inter:wght@400;700&display=swap');
+
+/* General Styling */
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0D0D26; /* Dark Navy */
+    color: #E6E6E6; /* Light Grey */
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Sticky Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #1A1A40, #3E1F47); /* Deep Purple Gradient */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #BDA4FC; /* Soft Lavender */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+/* Active section in navbar */
+nav ul li a.active {
+    color: #FFD700; /* Gold */
+    border-bottom: 2px solid #FFD700;
+}
+
+/* Sections */
+section {
+    padding: 50px 10%; /* Reduced space */
+    min-height: 40vh;
+    text-align: center;
+}
+
+/* Header Section */
+.header-container {
+    text-align: center;
+    background: rgba(26, 26, 64, 0.8);
+    padding: 40px;
+    margin: 10px auto;
+    max-width: 50%;
+    border-radius: 15px;
+}
+
+.header-container h1 {
+    font-size: 32px;
+    color: #FFD700; /* Gold */
+}
+
+/* Section Titles */
+section h2 {
+    font-size: 28px;
+    color: #FFD700; /* Gold */
+    border-bottom: 3px solid #6A0DAD;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Project Cards */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; /* More spacing */
+}
+
+.project-card {
+    width: 500px; /* Increased size */
+    height: 500px;
+    position: relative;
+    perspective: 1000px;
+    margin: 20px;
+}
+
+.project-card .card-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.project-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.project-card .front{
+    
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+    
+}
+.project-card .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.project-card .front {
+    background: #1A1A40;
+}
+
+.project-card .back {
+    background: #FFD700;
+    color: black;
+    transform: rotateY(180deg);
+}
+
+/* Resume Page - Containers that lift on hover */
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.resume-section {
+    background:#1A1A40;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+.resume-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(179, 146, 37, 0.386);
+}
+
+/* Skills Section */
+.skills-container {
+    margin: 40px auto;
+    padding: 20px;
+    background: #2E1D44;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.skill-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skill-box {
+    width: 220px;
+    background:#29294d;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.skill-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(179, 146, 37, 0.386);
+}
+/* Headings for Skills */
+.skills-heading {
+    color: yellow; /* Sets Technical Skills and Soft Skills headings to yellow */
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Paragraph Text for Skill Descriptions */
+.skill-box p {
+    color: #BDA4FC; /* Light purple color for text */
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Flow-in animation */
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.contact {
+    display: flex;
+    justify-content: center; /* Centers icons */
+    gap: 30px; /* Adjusts spacing between icons */
+}
+
+.contact a {
+    font-size: 18px; /* Adjusts icon size */
+    color:yellow; /* Change color as needed */
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.contact a:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    color: yellow;
+}
+
+
+
