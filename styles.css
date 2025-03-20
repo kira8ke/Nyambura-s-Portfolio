@@ -237,5 +237,20 @@ section.visible {
     color: yellow;
 }
 
+.resume-download {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2c3e50; /* Professional dark blue */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.resume-download:hover {
+    background-color: #1a252f;
+}
+
 
 
