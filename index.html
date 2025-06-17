@@ -1,86 +1,467 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Home</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gloria Wanyaga | DevSecOps & AI Portfolio</title>  
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="resume.html">Resume</a></li>
-        </ul>
-    </nav>
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="#about" class="active">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="access/Gloria Nyambura_Wanyaga_Resume (1).docx" download class="nav-resume-btn"> View Resume </a></li>
+    </ul>
+  </nav>
 
-    <section id="home">
-        <div class="header-container">
-            <h1>Hi there, I'm Gloria Nyambura Wanyaga </h1>
-            <p>Wecome to My Portfolio Website.</p>
+  <section id="about" class="hero-about">
+  <div class="avatar-wrapper">
+    <img src="images/Portfolio image.png" alt="Gloria Wanyaga Avatar" class="avatar-img">
+  </div>
+
+  <div class="intro-about-content">
+    <div class="intro-text">
+      <h1>Hi, I'm Gloria Nyambura Wanyaga</h1>
+      <p>Junior DevOps Engineer | Web Developer | Lifelong Learner | AIOps & MLOps</p>
+    </div>
+
+    <div class="about-highlight-box">
+      <p>I am a driven Computer Science student passionate about <strong>DevOps, AI, and Machine Learning</strong>.
+        I build smart, secure, and scalable systems, integrating security and automation to drive real-world impact and continuous growth through hands-on projects.
+</p>
+    </div>
+  </div>
+</section>
+
+<!-- Curved Line Divider -->
+<div class="curve-divider">
+  <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+    <path 
+      d="M0,50 C480,0 960,100 1440,50" 
+      stroke="#00d8ff" 
+      stroke-width="2" 
+      fill="none" />
+  </svg>
+</div>
+
+
+  <section id="experience" class="resume-section">
+  <h2>💼 Experience</h2>
+
+  <div class="resume-entry">
+    <div class="resume-entry-header">
+      <h3>Elit Coorp</h3>
+      <span class="duration">May 2025 - present</span>
+    </div>
+    <p><strong>Junior DevOps Engineer Intern</strong></p>
+    <ul>
+      <li>Assigned tasks focused on automation, continuous integration, and infrastructure management to streamline development workflows.</li>
+      <li>Implemented CI/CD pipelines using GitHub Actions for automated deployment.</li>
+      <li>Gained hands-on experience in DevOps tools and practices such as automated testing, and deployment pipelines.</li>
+    </ul>
+  </div>
+
+  <div class="resume-entry">
+    <div class="resume-entry-header">
+      <h3>Uvuvi-Tek</h3>
+      <span class="duration">March 2025 - Present</span>
+    </div>
+    <p><strong>App Developer – AI/ML Competition Participant (Cooperative University)</strong></p>
+    <ul>
+      <li>Collaborating to develop a machine learning-powered app aimed at assisting fish farmers in managing their ponds effectively.</li>
+      <li>Acquiring skills in data collection, model training, deployment automation, and real-time monitoring for AI applications in agriculture technology.</li>
+    </ul>
+  </div>
+
+  <div class="resume-entry">
+    <div class="resume-entry-header">
+      <h3>Elegance Dhobi</h3>
+      <span class="duration">August 2024 - Present</span>
+    </div>
+    <p><strong>Web Developer</strong></p>
+    <ul>
+      <li>Developed a comprehensive website to manage a laundry business based in Nyeri, completed within one month.</li>
+      <li>Implemented interactive features to enhance user experience and streamline business operations including booking, pricing, and employee management.</li>
+      <li>Continuously maintaining and improving the website to ensure optimal functionality and user engagement.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Curved Line Divider -->
+<div class="curve-divider">
+  <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+    <path 
+      d="M0,50 C480,0 960,100 1440,50" 
+      stroke="#00d8ff" 
+      stroke-width="2" 
+      fill="none" />
+  </svg>
+</div>
+
+ <section id="skills" class="skills-section">
+  <h2>💻 Skills</h2>
+  <div class="skills-container">
+
+    <div class="skills-group">
+      <h3>Programming & Fundamentals</h3>
+      <div class="skill-items">
+        <div class="skill-box">C++ </div>
+        <div class="skill-box">Java </div>
+        <div class="skill-box">Python Fundamentals</div>
+        <div class="skill-box">MATLAB</div>
+      </div>
+    </div>
+
+    <div class="skills-group">
+      <h3>DevOps & Tools</h3>
+      <div class="skill-items">
+        <div class="skill-box">GitHub Actions</div>
+        <div class="skill-box">Git</div>
+         <div class="skill-box">Docker</div>
+        <div class="skill-box">Jenkins</div>
+        <div class="skill-box">Ansible</div>
+
+      </div>
+    </div>
+
+    <div class="skills-group">
+      <h3>Web Development</h3>
+      <div class="skill-items">
+        <div class="skill-box">HTML</div>
+        <div class="skill-box">CSS</div>
+        <div class="skill-box">WordPress</div>
+      </div>
+    </div>
+
+    <div class="skills-group">
+      <h3>Other Skills</h3>
+      <div class="skill-items">
+        <div class="skill-box">Networking Basics</div>
+        <div class="skill-box">Database Management</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Curved Line Divider -->
+<div class="curve-divider">
+  <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+    <path 
+      d="M0,50 C480,0 960,100 1440,50" 
+      stroke="#00d8ff" 
+      stroke-width="2" 
+      fill="none" />
+  </svg>
+</div>
+
+
+
+<section id="projects">
+  <h2>🛠️ Projects</h2>
+
+  <div class="projects-wrapper">
+    <!-- SVG Lines -->
+    <svg id="connection-lines"></svg>
+
+    <!-- Project Grid -->
+    <div class="projects-container">
+      <div class="project" id="proj1" onclick="openModal('modal1')">
+        <h3>Smart Fish Farm Management App (Ongoing Project)</h3>
+        <p>A mobile tool helping rural fish farmers track pond data, get weather insights, and improve productivity using real-time monitoring and intuitive UI.</p>
+        <div class="tech-tags">
+          <span>Figma</span><span>Flutter</span><span>Google Maps API</span><span>Supabase</span><span>Firebase</span>
         </div>
-    </section>
+      </div>
 
-    <section id="introduction">
-        <h2>Introduction</h2>
-        <p>I am a Computer Science student with a strong passion for<strong> DevOps, AI, and Machine Learning</strong>, dedicated to automating workflows, optimizing infrastructure, and building intelligent, scalable solutions.  </p>
-        <a href="access/Gloria Nyambura_Wanyaga_Resume (1).docx" download="Gloria Nyambura_Wanyaga_Resume (1).docx">
-            <button class="resume-btn">Download My Resume</button>
-        </a>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-    
-        <!-- Technical Skills -->
-        <div class="skills-container">
-            <h3>Technical Skills</h3>
-            <div class="skill-grid">
-                <div class="skill-box">OOP (C++ & Java)</div>
-                <div class="skill-box">Python Basics</div>
-                <div class="skill-box">Jenkins & Ansible</div>
-                <div class="skill-box">Git</div>
-                <div class="skill-box">Networking</div>
-                <div class="skill-box">HTML & CSS</div>
-                <div class="skill-box">MATLAB </div>
-                <div class="skill-box">Database Management</div>
-                <div class="skill-box">Wordpress</div>
-            </div>
+      <div class="project" id="proj2" onclick="openModal('modal2')">
+        <h3>🔒 Secure Login System</h3>
+        <p>A reliable login system with layered security and user access control.</p>
+        <div class="tech-tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span>
         </div>
-    
-    <section id="contributions">
-        <h2>Contributions</h2>
-            <div class="contributions-container">
-                <div class="contribution-card">
-                    <h3>Hackathon Participation & Innovation</h3>
-                    <p>Participated in various hackathons, including <strong>Huawei Seeds of the Future 2024 and CUK Machine Learning Competition</strong> where I contributed to building innovative solutions aligned with AI,Ml, cybersecurity, and sustainability.</p>
-                </div>
-                <div class="contribution-card">
-                    <h3>Web Development Lead | Laundry Business Project </h3>
-                    <p>Currently building  a user-friendly website, integrating customer interaction features and service management tools.
-                        Applied practical HTML, CSS, and WordPress skills to enhance functionality and user experience.</p>
-                </div>
-            </div>
-        </section>
-        
-    </section>
+      </div>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: wanyagagloria43@gmail.com</p>
-        <p>Phone: +254 743033208</p>
-        <div class="contact">
-            <a href="https://github.com/kira8ke" target="_blank">
-                <i class="fab fa-github"></i> GitHub
-            </a>
-            <a href="https://www.linkedin.com/in/gloria-wanyaga-3b9050267/" target="_blank">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
+      <div class="project" id="proj3" onclick="openModal('modal3')">
+        <h3>📝 Resume Builder</h3>
+        <p>A dynamic tool for creating, customizing, and exporting professional resumes.</p>
+        <div class="tech-tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
         </div>
-        
-    </section>
-    
+      </div>
+
+      <div class="project" id="proj4" onclick="openModal('modal4')">
+        <h3>🌱 Agriventure</h3>
+        <p>An AI-powered platform offering market insights and crop recommendations for farmers</p>
+        <div class="tech-tags">
+          <span>Canva</span><span>AI/ML</span><span>Research</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 1 -->
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal1')">&times;</span>
+      <h3>Uvuvi Tek Fish Management System</h3>
+      <p>An aquaculture-focused mobile app designed for fish farmers to monitor and manage pond activities with ease.</p>
+      <ul>
+        <li>Pond Management & Record Keeping</li>
+        <li>Weather & Environment-Based Recommendations</li>
+        <li>Market Insights & Price Trends</li>
+      </ul>
+      <div class="tech-stack">
+        <span class="tech-pill">Figma</span><span class="tech-pill">Flutter</span>
+        <span class="tech-pill">Firebase</span><span class="tech-pill">Supabase</span>
+        <span class="tech-pill">Python</span><span class="tech-pill">Google Maps API</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal" id="modal2">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <h3>🔒 Secure Login System</h3>
+      <p>Built for Elegance Dhobi, this system ensures seamless, secure user authentication and robust access control mechanisms.</p>
+      <ul>
+        <li>Hashed passwords and session management</li>
+        <li>Admin and customer access levels</li>
+        <li>SQL Injection and XSS protection</li>
+      </ul>
+      <div class="tech-stack">
+        <span class="tech-pill">HTML</span><span class="tech-pill">CSS</span>
+        <span class="tech-pill">JavaScript</span><span class="tech-pill">PHP</span>
+        <span class="tech-pill">MySQL</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="modal" id="modal3">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal3')">&times;</span>
+      <h3>📝 Resume Builder</h3>
+      <p>A web app that allows users to craft, preview, and export resumes with ease.</p>
+      <ul>
+        <li>Live editing and preview</li>
+        <li>Export to PDF</li>
+        <li>Template flexibility</li>
+      </ul>
+      <div class="tech-stack">
+        <span class="tech-pill">HTML</span><span class="tech-pill">CSS</span>
+        <span class="tech-pill">JavaScript</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div class="modal" id="modal4">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal4')">&times;</span>
+      <h3>🌱 Agriventure</h3>
+      <p>An AI-powered advisory platform empowering farmers through market insights and crop recommendations.</p>
+      <ul>
+        <li>AI concept for data-driven decision-making</li>
+        <li>Farmer-to-market integration</li>
+        <li>Pricing strategy suggestions</li>
+      </ul>
+      <div class="tech-stack">
+        <span class="tech-pill">Canva</span><span class="tech-pill">Powerpoint</span>
+        <span class="tech-pill">Market research</span><span class="tech-pill">AI/ML concepts</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Curved Line Divider -->
+<div class="curve-divider">
+  <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+    <path 
+      d="M0,50 C480,0 960,100 1440,50" 
+      stroke="#00d8ff" 
+      stroke-width="2" 
+      fill="none" />
+  </svg>
+</div>
+
+<section id="education" class="resume-section">
+  <h2>🎓 Education</h2>
+  <div class="resume-entry">
+    <div class="resume-entry-header">
+      <h3>Cooperative University of Kenya</h3>
+      <span class="duration">2023 – Present</span>
+    </div>
+    <p><strong>B.Sc. in Computer Science</strong></p>
+    <ul>
+      <li>Focus: DevOps, Cybersecurity, Artificial Intelligence & Machine Learning</li>
+      <li>Member of the DevSecOps & AI Club</li>
+    </ul>
+  </div>
+</section>
+
+<section class="resume-section" id="certifications">
+  <h2>📜 Certifications</h2>
+
+  <div class="certs-container">
+    <div class="cert-card">
+      <div class="badge">🌍</div>
+      <h3>Huawei LEAP Certification</h3>
+      <span class="duration">2024</span>
+      <p>Focus on Cloud, AI, and emerging technologies across Africa.</p>
+    </div>
+
+    <div class="cert-card">
+      <div class="badge">🐧</div>
+      <h3>CompTIA Linux Essentials</h3>
+      <span class="duration">2024</span>
+      <p>Mastered command line tools, Linux administration basics, and shell scripting.</p>
+    </div>
+
+    <div class="cert-card">
+      <div class="badge">🛡️</div>
+      <h3>CompTIA+ Certification</h3>
+      <span class="duration">2024</span>
+      <p>Solid foundation in IT infrastructure, security, troubleshooting, and networking.</p>
+    </div>
+
+    <div class="cert-card">
+      <div class="badge">⚙️</div>
+      <h3>Infosec: Automation & Hardware</h3>
+      <span class="duration">2024</span>
+      <p>Hands-on experience in automation, hardware configuration, and bash scripting.</p>
+    </div>
+
+    <div class="cert-card">
+      <div class="badge">🧰</div>
+      <h3>System Operations Maintenance</h3>
+      <span class="duration">2023</span>
+      <p>Trained on maintaining secure, scalable environments in production setups.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="resume-download">
+  <a href="access/Gloria Nyambura_Wanyaga_Resume (1).docx" download>
+    <button class="resume-btn">📄 Download My Resume</button>
+  </a>
+</section>
+
+<!-- Curved Line Divider -->
+<div class="curve-divider">
+  <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+    <path 
+      d="M0,50 C480,0 960,100 1440,50" 
+      stroke="#00d8ff" 
+      stroke-width="2" 
+      fill="none" />
+  </svg>
+</div>
+
+
+
+  <section id="contact" class ="Contact">
+  <h2>Let's Connect 🤝</h2>
+  <p>I'd love to hear from you! Whether it's a collaboration, a project, or just to say hi 👋</p>
+
+  <p><i class="fas fa-envelope"></i> Email: <a href="mailto:wanyagagloria43@gmail.com">wanyagagloria43@gmail.com</a></p>
+  <p><i class="fas fa-phone"></i> Phone: <a href="tel:+254743033208">+254 743 033 208</a></p>
+
+  <div class="contact-links">
+    <a href="https://github.com/kira8ke" target="_blank">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+    <a href="https://www.linkedin.com/in/gloria-wanyaga-3b9050267/" target="_blank">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+  </div>
+</section>
+
+
+  <!-- Scroll to Top Button -->
+<button id="scrollToTopBtn" title="Go to top">↑</button>
+
+<!-- Floating Social Icons -->
+<div class="floating-icons">
+  <!-- GitHub -->
+  <a href="https://github.com/kira8ke" target="_blank" aria-label="GitHub">
+    <i class="fab fa-github"></i>
+  </a>
+
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/gloria-wanyaga-3b9050267/" target="_blank" aria-label="LinkedIn">
+    <i class="fab fa-linkedin"></i>
+  </a>
+
+  <!-- Resume Download -->
+  <a href="access/Gloria_Nyambura_Wanyaga_Resume.docx" download aria-label="Download Resume">
+    <i class="fas fa-file-download"></i>
+  </a>
+</div>
+
+
+
+<!-- Loading Spinner -->
+<div id="loader">
+  <div class="spinner"></div>
+</div>
+
+<script>
+function drawMatrixLines() {
+  const svg = document.getElementById('connection-lines');
+  svg.innerHTML = '';
+
+  const ids = ['proj1', 'proj2', 'proj3', 'proj4'];
+  const elements = ids.map(id => document.getElementById(id));
+  const svgRect = svg.getBoundingClientRect();
+
+  function center(el) {
+    const rect = el.getBoundingClientRect();
+    return {
+      x: rect.left + rect.width / 2 - svgRect.left,
+      y: rect.top + rect.height / 2 - svgRect.top
+    };
+  }
+
+  function line(a, b) {
+    const l = document.createElementNS("http://www.w3.org/2000/svg", "line");
+    l.setAttribute("x1", a.x);
+    l.setAttribute("y1", a.y);
+    l.setAttribute("x2", b.x);
+    l.setAttribute("y2", b.y);
+    l.setAttribute("stroke", "#00d8ff");
+    l.setAttribute("stroke-width", "2");
+    l.setAttribute("stroke-opacity", "0.2");
+    svg.appendChild(l);
+  }
+
+  const [p1, p2, p3, p4] = elements.map(center);
+
+  line(p1, p2); // top row
+  line(p3, p4); // bottom row
+  line(p1, p3); // left column
+  line(p2, p4); // right column
+}
+
+window.addEventListener('load', drawMatrixLines);
+window.addEventListener('resize', drawMatrixLines);
+</script>
+
+
 </body>
 </html>
