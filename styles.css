@@ -899,6 +899,73 @@ h3 {
   display: block;
 }
 
+/* Responsive Design for phones */
+@media (max-width: 768px) {
+  .hero-content,
+  .skills-container,
+  .projects-container,
+  .resume-container,
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .avatar-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .intro-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .intro-text p {
+    font-size: 1rem;
+  }
+
+  .skills-container,
+  .projects-container {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .project,
+  .skills-group {
+    min-width: 280px;
+    width: 90%;
+  }
+
+  .floating-icons {
+    display: none;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    font-size: 0.9rem;
+  }
+
+  .resume-entry {
+    padding: 1rem;
+  }
+
+  .modal-content {
+    width: 95%;
+  }
+
+  section {
+    padding: 60px 10px;
+  }
+}
+
+
 
 
 
