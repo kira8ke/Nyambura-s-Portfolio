@@ -899,18 +899,18 @@ h3 {
   display: block;
 }
 
-/* Responsive Design for phones */
 @media (max-width: 768px) {
-  .hero-content,
-  .skills-container,
-  .projects-container,
-  .resume-container,
-  .contact-links {
-    flex-direction: column;
-    align-items: center;
+  /* Navbar */
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
   }
 
+  /* Hero Section */
   .hero-content {
+    flex-direction: column;
     text-align: center;
   }
 
@@ -927,46 +927,53 @@ h3 {
     font-size: 1rem;
   }
 
-  .skills-container,
-  .projects-container {
+  /* Skills Section */
+  .skills-container {
+    display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
     gap: 1rem;
     padding-bottom: 1rem;
   }
 
-  .project,
   .skills-group {
-    min-width: 280px;
-    width: 90%;
+    min-width: 260px;
+    flex-shrink: 0;
   }
 
-  .floating-icons {
-    display: none;
-  }
-
-  .nav-links {
-    flex-wrap: wrap;
+  /* Projects Section */
+  .projects-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
     gap: 1rem;
-    justify-content: center;
-    font-size: 0.9rem;
+    padding-bottom: 1rem;
   }
 
+  .project {
+    min-width: 280px;
+    flex-shrink: 0;
+  }
+
+  /* Resume / Certifications */
   .resume-entry {
     padding: 1rem;
   }
 
-  .modal-content {
-    width: 95%;
+  /* Contact Section */
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
 
-  section {
-    padding: 60px 10px;
+  /* Hide floating icons */
+  .floating-icons {
+    display: none;
+  }
+
+  /* Modals */
+  .modal-content {
+    width: 90%;
   }
 }
-
-
-
-
-
-
