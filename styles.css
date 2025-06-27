@@ -174,8 +174,8 @@ h3 {
   
   /* Sections */
   section {
-  padding: 80px 5vw; /* Uses responsive padding */
-  max-width: 100%;   /* Stretch full width */
+  padding: 60px 20px; /* Uses responsive padding */
+  width: 100%;   /* Stretch full width */
   margin: 0 auto ;         /* Remove center alignment */
   opacity: 0;
   transform: translateY(40px);
