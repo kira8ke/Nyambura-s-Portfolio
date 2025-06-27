@@ -20,7 +20,11 @@ body {
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    *,
+    *::before,
+    *::after{
+      box-sizing: border-box;
+    }
   }
   
   html {
@@ -174,7 +178,7 @@ h3 {
   
   /* Sections */
   section {
-  padding: 60px 20px; /* Uses responsive padding */
+  padding: 80px 20px; /* Uses responsive padding */
   width: 100%;   /* Stretch full width */
   margin: 0 auto ;         /* Remove center alignment */
   opacity: 0;
