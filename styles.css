@@ -904,6 +904,16 @@ h3 {
 }
 
 @media (max-width: 768px) {
+  section {
+    max-width: 100%;
+    padding: 60px 15px;
+  }
+  .container, .main {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
   /* Navbar */
   .nav-links {
     flex-wrap: wrap;
@@ -973,11 +983,100 @@ h3 {
 
   /* Hide floating icons */
   .floating-icons {
-    display: none;
+    display: flex;
   }
 
   /* Modals */
   .modal-content {
     width: 90%;
   }
+}
+.github-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #0d1117;
+  color: #00bcd4;
+  border: 1px solid #00bcd4;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.github-btn:hover {
+  background-color: #00bcd4;
+  color: #0d1117;
+}
+
+/* Experience Section Styling */
+.resume-section {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #f5f5f5;
+}
+
+.resume-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  color: #00bcd4; /* Accent color */
+}
+
+/* Each job entry card */
+.resume-entry {
+  background: #1c1f26; /* Dark card background */
+  border-left: 4px solid #00bcd4; /* Accent stripe */
+  border-radius: 12px;
+  padding: 1.5rem 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-entry:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+}
+
+/* Header containing company + dates */
+.resume-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.resume-entry-header h3 {
+  font-size: 1.3rem;
+  margin: 0;
+  color: #ffffff;
+}
+
+.resume-entry .duration {
+  font-size: 0.95rem;
+  color: #aaa;
+}
+
+/* Role title */
+.resume-entry p strong {
+  display: block;
+  font-size: 1.05rem;
+  margin-bottom: 0.8rem;
+  color: #00bcd4;
+}
+
+/* Bullet list */
+.resume-entry ul {
+  list-style: disc;
+  margin-left: 1.2rem;
+  padding-left: 0;
+  color: #d0d0d0;
+}
+
+.resume-entry ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
 }
