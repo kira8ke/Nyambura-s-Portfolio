@@ -911,7 +911,7 @@ h3 {
   .container, .main {
   width: 100%;
   max-width: 100%;
-  padding: 0;
+  padding: 0 1rem;
   margin: 0;
 }
   /* Navbar */
@@ -926,6 +926,7 @@ h3 {
   .hero-content {
     flex-direction: column;
     text-align: center;
+    align-items: center;
   }
 
   .avatar-img {
@@ -939,6 +940,11 @@ h3 {
 
   .intro-text p {
     font-size: 1rem;
+  }
+
+  .intro-text {
+  max-width: 100%;
+  padding: 0 1rem;
   }
 
   /* Skills Section */
@@ -981,10 +987,14 @@ h3 {
     gap: 1rem;
   }
 
-  /* Hide floating icons */
   .floating-icons {
-    display: flex;
-  }
+  top: unset;
+  bottom: 2rem;
+  right: 1rem;
+  flex-direction: row;
+  gap: 0.5rem;
+  z-index: 10;
+}
 
   /* Modals */
   .modal-content {
