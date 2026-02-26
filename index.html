@@ -1,549 +1,597 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gloria Wanyaga | DevSecOps & AI Portfolio</title>  
+  <title>Gloria Wanyaga | DevOps, AI & Automation Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="hero-update.css" />
   <script defer src="script.js"></script>
+  <script defer src="hero-update.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+
+  <!-- ═══════ NAVBAR ═══════ -->
   <nav class="navbar">
-    <ul class="nav-links">
-      <li><a href="#about" class="active">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="access/Gloria Nyambura_Wanyaga_Resume.docx" download class="nav-resume-btn"> View Resume </a></li>
-    </ul>
+    <div class="nav-inner">
+      <div class="nav-logo">GW</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="active">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="access/Gloria Nyambura_Wanyaga_Resume.docx" download class="nav-resume-btn">View Resume</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-icon sun"><i class="fas fa-sun"></i></span>
+          <span class="theme-icon moon"><i class="fas fa-moon"></i></span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
   </nav>
 
+  <!-- Mobile nav overlay -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+
+  <!-- Mobile nav drawer -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">
+      <i class="fas fa-times"></i>
+    </button>
+    <ul>
+      <li><a href="#about" class="mobile-nav-link">About</a></li>
+      <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+      <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+      <li><a href="#education" class="mobile-nav-link">Education</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <a href="access/Gloria Nyambura_Wanyaga_Resume.docx" download class="mobile-resume-btn">Download Resume</a>
+  </div>
+
+  <!-- ═══════ ABOUT / HERO ═══════ -->
   <section id="about" class="hero-about">
-  <div class="avatar-wrapper">
-    <img src="images/Portfolio image.png" alt="Gloria Wanyaga Avatar" class="avatar-img">
-  </div>
-
-  <div class="intro-about-content">
-    <div class="intro-text">
-      <h1>Hi, I'm Gloria Nyambura Wanyaga</h1>
-      <p>Junior DevOps Engineer | Web Developer | Lifelong Learner | AIOps & MLOps</p>
+    <!-- Decorative background patterns -->
+    <div class="hero-bg-patterns">
+      <div class="pattern-grid"></div>
+      <div class="pattern-circle c1"></div>
+      <div class="pattern-circle c2"></div>
+      <div class="pattern-dots"></div>
     </div>
 
-    <div class="about-highlight-box">
-      <p>I am a driven Computer Science student passionate about <strong>DevOps, AI, and Machine Learning</strong>.
-        I build smart, secure, and scalable systems, integrating security and automation to drive real-world impact and continuous growth through hands-on projects.
-</p>
-    </div>
-  </div>
-</section>
-
-<!-- Curved Line Divider -->
-<div class="curve-divider">
-  <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
-    <path 
-      d="M0,50 C480,0 960,100 1440,50" 
-      stroke="#00d8ff" 
-      stroke-width="2" 
-      fill="none" />
-  </svg>
-</div>
-
-
-  <section id="experience" class="resume-section">
-  <h2>💼 Experience</h2>
-
-  <div class="resume-entry">
-    <div class="resume-entry-header">
-      <h3>Elit Coorp</h3>
-      <span class="duration">May 2025 - present</span>
-    </div>
-    <p><strong>Junior DevOps Engineer Intern</strong></p>
-    <ul>
-      <li>Assigned tasks focused on automation, continuous integration, and infrastructure management to streamline development workflows.</li>
-      <li>Implemented CI/CD pipelines using GitHub Actions for automated deployment.</li>
-      <li> Setup an SES, cloud based email service for email sending and setup a newsletter service for the company </li>
-      <li>Moved a Vercel app, built on Next.js, from the sandbox to production and set it up on Cloudflare. </li>
-      <li>Updated the company's website built on Wordpress Elementor, ensured management of the website by adding plugins, backing them up and setting it up on Cloudflare.</li> 
-      <li>Interacted with Strapi and understood the workflows</li>
-      <li> Built custom WordPress blocks with Advanced Custom Fields, using PHP templates and custom styling for fast, responsive sites without page builders.</li>
-    </ul>
-  </div>
-
-  <div class="resume-entry">
-    <div class="resume-entry-header">
-      <h3>Uvuvi-Tek</h3>
-      <span class="duration">March 2025 - Present</span>
-    </div>
-    <p><strong>App Developer – AI/ML Competition Participant (Cooperative University)</strong></p>
-    <ul>
-      <li>Collaborating to develop a machine learning-powered app aimed at assisting fish farmers in managing their ponds effectively.</li>
-      <li>Acquiring skills in data collection, model training, deployment automation, and real-time monitoring for AI applications in agriculture technology.</li>
-    </ul>
-  </div>
-
-  <div class="resume-entry">
-    <div class="resume-entry-header">
-      <h3>Elegance Dhobi</h3>
-      <span class="duration">August 2024 - Present</span>
-    </div>
-    <p><strong>Web Developer</strong></p>
-    <ul>
-      <li>Developed a comprehensive website to manage a laundry business based in Nyeri, completed within one month.</li>
-      <li>Implemented interactive features to enhance user experience and streamline business operations including booking, pricing, and employee management.</li>
-      <li>Continuously maintaining and improving the website to ensure optimal functionality and user engagement.</li>
-    </ul>
-  </div>
-</section>
-
-<!-- Curved Line Divider -->
-<div class="curve-divider">
-  <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
-    <path 
-      d="M0,50 C480,0 960,100 1440,50" 
-      stroke="#00d8ff" 
-      stroke-width="2" 
-      fill="none" />
-  </svg>
-</div>
-
- <section id="skills" class="skills-section">
-  <h2>💻 Skills</h2>
-  <div class="skills-container">
-
-    <div class="skills-group">
-      <h3>Programming & Fundamentals</h3>
-      <div class="skill-items">
-        <div class="skill-box">Python (scripting)</div>
-        <div class="skill-box">Bash </div>
-        <div class="skill-box">JavaScript</div>
-        <div class="skill-box">Dart & Flutter (Fundamentals)</div>
-        <div class="skill-box">C++ </div>
-        <div class="skill-box">Java </div>
+    <!-- Left: Text content -->
+    <div class="hero-content">
+      <div class="hero-role-badge">
+        <span class="badge-dot"></span>
+        <span>Available for opportunities</span>
       </div>
-    </div>
 
-    <div class="skills-group">
-      <h3>DevOps & Automation Tools</h3>
-      <div class="skill-items">
-        <div class="skill-box">GitHub Actions</div>
-        <div class="skill-box">Git</div>
-        <div class="skill-box">n8n</div>
-         <div class="skill-box">Docker</div>
-        <div class="skill-box">Terraform</div>
-        <div class="skill-box">AWS</div>
-        <div class="skill-box">Google Cloud </div>
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">Gloria Nyambura <span class="hero-name-accent">Wanyaga</span></h1>
 
+      <div class="hero-tagline">
+        <span class="tagline-static">I build</span>
+        <span class="tagline-dynamic-wrapper">
+          <span class="tagline-dynamic" id="typingText"></span><span class="typing-cursor">|</span>
+        </span>
+        <span class="tagline-static">as a</span>
+        <span class="tagline-role-pill" id="rolePill">DevOps Engineer</span>
       </div>
-    </div>
 
-    <div class="skills-group">
-      <h3>Web Development</h3>
-      <div class="skill-items">
-        <div class="skill-box">HTML</div>
-        <div class="skill-box">CSS</div>
-        <div class="skill-box">WordPress</div>
-      </div>
-    </div>
+      <p class="hero-bio">
+        I'm a driven Computer Science student passionate about <strong>DevOps, AI Automation, and Machine Learning</strong>. I build smart, secure, and scalable systems — integrating security, automation, and real-world impact into every project. Currently leveling up in <strong>AIOps, AI Automation, Python, and advanced cloud architecture</strong>.
+      </p>
 
-    <div class="skills-group">
-      <h3>Other Skills</h3>
-      <div class="skill-items">
-        <div class="skill-box">Networking Basics</div>
-        <div class="skill-box">SQL(basics)</div>
-        <div class="skill-box">Networking Basics</div>
-      </div>
-    </div>
+      <p class="hero-quote">
+        I like my code like I like my cars — <strong>clean, efficient, and fast.</strong>
+      </p>
 
-  </div>
-</section>
-
-<!-- Curved Line Divider -->
-<div class="curve-divider">
-  <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
-    <path 
-      d="M0,50 C480,0 960,100 1440,50" 
-      stroke="#00d8ff" 
-      stroke-width="2" 
-      fill="none" />
-  </svg>
-</div>
-
-
-
-<section id="projects">
-  <h2>🛠️ Projects</h2>
-
-  <div class="projects-wrapper">
-    <!-- SVG Lines -->
-    <svg id="connection-lines"></svg>
-
-    <!-- Project Grid -->
-    <div class="projects-container">
-      <div class="project" id="proj1" onclick="openModal('modal1')">
-        <h3> 🐟Smart Fish Farm Management App (Ongoing Project)</h3>
-        <p>Mobile tool for rural fish farmers to monitor ponds, get weather updates, and boost productivity.</p>
-        <div class="tech-tags">
-          <span>Figma</span><span>FlutterFlow</span><span>Flutter</span><span>Google Maps API</span><span>Supabase</span><span>Firebase</span>
+      <div class="hero-cta">
+        <a href="#contact" class="cta-btn cta-primary">Let's Connect</a>
+        <a href="#projects" class="cta-btn cta-secondary">View Projects</a>
+        <div class="hero-socials">
+          <a href="https://github.com/kira8ke" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/gloria-wanyaga-3b9050267/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
         </div>
       </div>
 
-    <div class="project" id="proj2" onclick="openModal('modal2')">
-        <h3>🐳 DevOps July Challenge 2025 </h3>
-        <p>A four-week hands-on DevOps challenge showcasing my skills in CI/CD, Docker, IaC, monitoring, and Kubernetes through real-world implementations.</p>
-        <div class="tech-tags">
-          <span>CI/CD</span><span>Docker</span><span>AWS</span><span>Kubernetes</span><span>GitHub Actions</span>
-        </div>
-      </div>
-
-    <div class="project" id="n8n-section" onclick="openModal('modal3')">
-      <h3>⚙️ n8n Automation Projects</h3>
-      <p>Explore powerful workflows built with n8n to automate tasks, integrate tools, and streamline processes.</p>
-      <div class="tech-tags">
-       <span>n8n</span><span>APIs</span><span>Automation</span><span>Low-Code</span><span>Integrations</span>
-      </div>
-     </div>
-
-
-      <div class="project" id="proj2" onclick="openModal('modal4')">
-        <h3>🔒 Secure Login System</h3>
-        <p>A reliable login system with layered security and user access control.</p>
-        <div class="tech-tags">
-          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span>
-        </div>
-      </div>
-
-      <div class="project" id="proj3" onclick="openModal('modal5')">
-        <h3>📝 Resume Builder</h3>
-        <p>A dynamic tool for creating, customizing, and exporting professional resumes.</p>
-        <div class="tech-tags">
-          <span>HTML</span><span>CSS</span><span>JavaScript</span>
-        </div>
-      </div>
-
-      <div class="project" id="proj4" onclick="openModal('modal6')">
-        <h3>🌱 Agriventure</h3>
-        <p>An AI-powered platform offering market insights and crop recommendations for farmers</p>
-        <div class="tech-tags">
-          <span>Canva</span><span>AI/ML</span><span>Research</span>
-        </div>
+      <div class="hero-meta">
+        <span><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</span>
+        <span><i class="fas fa-envelope"></i> wanyagagloria43@gmail.com</span>
       </div>
     </div>
-  </div>
 
-  <!-- Modal 1 -->
-  <div class="modal" id="modal1">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal1')">&times;</span>
-      <h3>🐟 Uvuvi Tek Fish Management System</h3>
-      <p>An aquaculture-focused mobile app designed for fish farmers to monitor and manage pond activities with ease.</p>
-      <ul>
-        <li>Pond Management & Record Keeping</li>
-        <li>Weather & Environment-Based Recommendations</li>
-        <li>Market Insights & Price Trends</li>
-      </ul>
+    <!-- Right: Image with decorative frame -->
+    <div class="hero-image-wrapper">
+      <div class="hero-image-frame">
+        <div class="frame-border"></div>
+        <div class="frame-corner tl"></div>
+        <div class="frame-corner tr"></div>
+        <div class="frame-corner bl"></div>
+        <div class="frame-corner br"></div>
+        <div class="hero-img-container">
+          <img src="images/Portfolio image.png" alt="Gloria Wanyaga" class="hero-img">
+        </div>
+        <!-- Floating tech badges -->
+        <div class="float-badge fb-1"><i class="fab fa-docker"></i> DevOps</div>
+        <div class="float-badge fb-2"><i class="fas fa-robot"></i> AI/ML</div>
+        <div class="float-badge fb-3"><i class="fas fa-cloud"></i> Cloud</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="curve-divider"><svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,50 C480,0 960,100 1440,50" stroke="#00d8ff" stroke-width="2" fill="none"/></svg></div>
+
+  <!-- ═══════ EXPERIENCE ═══════ -->
+  <section id="experience">
+    <div class="section-header">
+      <h2> Experience</h2>
+      <p class="section-sub">Where I've contributed — building, shipping, and learning in the real world.</p>
+    </div>
+
+    <div class="exp-grid">
+
+      <div class="exp-card">
+        <div class="exp-preview" onclick="openExpModal('exp-modal-1')">
+          <div class="exp-preview-screen">
+            <div class="exp-browser-bar">
+              <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+              <span class="browser-url">elit.co.ke — devops internship</span>
+            </div>
+            <div class="exp-preview-content">
+              <div class="exp-icon-display">
+                <i class="fab fa-github" style="color:#00d8ff"></i>
+                <i class="fab fa-docker" style="color:#2496ED"></i>
+                <i class="fas fa-cloud" style="color:#FF9900"></i>
+                <i class="fab fa-wordpress" style="color:#21759B"></i>
+              </div>
+              <p class="exp-preview-label">CI/CD · AWS SES · Cloudflare · WordPress</p>
+            </div>
+          </div>
+          <div class="exp-hover-overlay"><i class="fas fa-expand-alt"></i> View Details</div>
+        </div>
+        <div class="exp-meta">
+          <span class="exp-badge">MAY 2025 – AUG 2025 · INTERNSHIP</span>
+          <h3>Elit Coorp</h3>
+          <p class="exp-role">Junior DevOps Engineer Intern</p>
+          <p class="exp-desc">Built CI/CD pipelines, AWS SES email services, Cloudflare deployments, and custom WordPress solutions for the company.</p>
+          <div class="exp-tags">
+            <span>GitHub Actions</span><span>AWS SES</span><span>Cloudflare</span><span>WordPress</span><span>Next.js</span><span>Strapi</span>
+          </div>
+          <button class="view-project-btn" onclick="openExpModal('exp-modal-1')">
+            <i class="fas fa-external-link-alt"></i> View Project
+          </button>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-preview" onclick="openExpModal('exp-modal-2')">
+          <div class="exp-preview-screen">
+            <div class="exp-browser-bar">
+              <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+              <span class="browser-url">uvuvi-tek · fish farm AI app</span>
+            </div>
+            <div class="exp-preview-content">
+              <div class="exp-icon-display">
+                <i class="fas fa-fish" style="color:#00d8ff"></i>
+                <i class="fas fa-mobile-alt" style="color:#54C5F8"></i>
+                <i class="fas fa-brain" style="color:#A259FF"></i>
+                <i class="fas fa-map-marker-alt" style="color:#EA4335"></i>
+              </div>
+              <p class="exp-preview-label">Flutter · Firebase · ML · Google Maps</p>
+            </div>
+          </div>
+          <div class="exp-hover-overlay"><i class="fas fa-expand-alt"></i> View Details</div>
+        </div>
+        <div class="exp-meta">
+          <span class="exp-badge">MAR 2025 – FEB 2026 · AI/ML COMPETITION</span>
+          <h3>Uvuvi-Tek</h3>
+          <p class="exp-role">App Developer – AI/ML Competition Participant</p>
+          <p class="exp-desc">Building an ML-powered mobile app to help fish farmers manage ponds, get weather insights, and access market data.</p>
+          <div class="exp-tags">
+            <span>Flutter</span><span>FlutterFlow</span><span>Firebase</span><span>Supabase</span><span>Figma</span><span>Python</span>
+          </div>
+          <button class="view-project-btn" onclick="openExpModal('exp-modal-2')">
+            <i class="fas fa-external-link-alt"></i> View Project
+          </button>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-preview" onclick="openExpModal('exp-modal-3')">
+          <div class="exp-preview-screen">
+            <div class="exp-browser-bar">
+              <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+              <span class="browser-url">elegancedhobi.co.ke — laundry platform</span>
+            </div>
+            <div class="exp-preview-content">
+              <div class="exp-icon-display">
+                <i class="fab fa-html5" style="color:#E34F26"></i>
+                <i class="fab fa-php" style="color:#777BB4"></i>
+                <i class="fas fa-lock" style="color:#00d8ff"></i>
+                <i class="fas fa-calendar-check" style="color:#34A853"></i>
+              </div>
+              <p class="exp-preview-label">PHP · MySQL · Secure Auth · Bookings</p>
+            </div>
+          </div>
+          <div class="exp-hover-overlay"><i class="fas fa-expand-alt"></i> View Details</div>
+        </div>
+        <div class="exp-meta">
+          <span class="exp-badge">AUG 2024 – SEP 2024 · WEB DEVELOPER</span>
+          <h3>Elegance Dhobi</h3>
+          <p class="exp-role">Web Developer</p>
+          <p class="exp-desc">Delivered a full-featured laundry business website in Nyeri with secure login, booking system, and employee management — in one month.</p>
+          <div class="exp-tags">
+            <span>HTML</span><span>CSS</span><span>PHP</span><span>MySQL</span><span>JavaScript</span>
+          </div>
+          <button class="view-project-btn" onclick="openExpModal('exp-modal-3')">
+            <i class="fas fa-external-link-alt"></i> View Project
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Experience Modals -->
+  <div class="modal exp-modal" id="exp-modal-1">
+    <div class="modal-content modal-content--wide">
+      <span class="close" onclick="closeModal('exp-modal-1')">&times;</span>
+      <div class="exp-modal-header">
+        <span class="exp-badge">MAY 2025 – AUG 2025 · INTERNSHIP</span>
+        <h3>Elit Coorp — Junior DevOps Engineer Intern</h3>
+      </div>
+      <div class="gallery-slider">
+        <div class="gallery-track" id="gallery-exp1">
+          <div class="gallery-slide"><div class="gallery-placeholder"><i class="fab fa-github" style="font-size:3.5rem;color:#00d8ff;"></i><p><strong>CI/CD Pipelines with GitHub Actions</strong></p><p>Designed automated workflows for build, test, and deploy cycles — reducing manual deployment time and human error across environments.</p></div></div>
+          <div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-envelope" style="font-size:3.5rem;color:#FF9900;"></i><p><strong>AWS SES + Newsletter Service</strong></p><p>Configured Amazon Simple Email Service for transactional emails and built an automated newsletter pipeline for the company's marketing needs.</p></div></div>
+          <div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-rocket" style="font-size:3.5rem;color:#F6821F;"></i><p><strong>Next.js → Cloudflare Production Migration</strong></p><p>Moved a Next.js application from Vercel sandbox to production, configuring Cloudflare DNS, CDN caching, and page rules for performance and security.</p></div></div>
+          <div class="gallery-slide"><div class="gallery-placeholder"><i class="fab fa-wordpress" style="font-size:3.5rem;color:#21759B;"></i><p><strong>WordPress + Advanced Custom Fields</strong></p><p>Built custom WordPress blocks using PHP templates and ACF field groups — fast, responsive sites without relying on page builders.</p></div></div>
+          <div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-layer-group" style="font-size:3.5rem;color:#8B5CF6;"></i><p><strong>Strapi CMS Integration</strong></p><p>Worked with Strapi's content API, understood collection types, component architecture, and headless CMS workflows powering the front-end.</p></div></div>
+        </div>
+        <button class="gallery-btn prev" onclick="slideGallery('gallery-exp1', -1)">&#8249;</button>
+        <button class="gallery-btn next" onclick="slideGallery('gallery-exp1', 1)">&#8250;</button>
+        <div class="gallery-dots" id="dots-gallery-exp1"></div>
+      </div>
       <div class="tech-stack">
-        <span class="tech-pill">Figma</span><span class="tech-pill">Flutter</span><span class="tech-pill">FlutterFlow</span>
-        <span class="tech-pill">Firebase</span><span class="tech-pill">Supabase</span>
-        <span class="tech-pill">Python</span><span class="tech-pill">Google Maps API</span>
+        <span class="tech-pill">GitHub Actions</span><span class="tech-pill">AWS SES</span><span class="tech-pill">Cloudflare</span><span class="tech-pill">Next.js</span><span class="tech-pill">WordPress</span><span class="tech-pill">Strapi</span><span class="tech-pill">PHP</span>
       </div>
     </div>
   </div>
 
- <!-- Modal 2 -->
-<div class="modal" id="modal2">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal2')">&times;</span>
-    <h3>🐳 DevOps July Challenge</h3>
-    <p>A month-long DevOps challenge where I built and deployed containerized, automated, and monitored systems end-to-end.</p>
-    <ul>
-      <li>Created Dockerized applications with CI/CD pipelines using GitHub Actions</li>
-      <li>Provisioned cloud infrastructure with Terraform (AWS)</li>
-      <li>Set up monitoring with Prometheus, Grafana, and alerting pipelines</li>
-      <li>Deployed microservices to Kubernetes with Helm charts</li>
-    </ul>
-    <div class="tech-stack">
-      <span class="tech-pill">Docker</span>
-      <span class="tech-pill">GitHub Actions</span>
-      <span class="tech-pill">Terraform</span>
-      <span class="tech-pill">AWS</span>
-      <span class="tech-pill">Prometheus</span>
-      <span class="tech-pill">Grafana</span>
-      <span class="tech-pill">Kubernetes</span>
-      <span class="tech-pill">Helm</span>
+  <div class="modal exp-modal" id="exp-modal-2">
+    <div class="modal-content modal-content--wide">
+      <span class="close" onclick="closeModal('exp-modal-2')">&times;</span>
+      <div class="exp-modal-header">
+        <span class="exp-badge">MAR 2025 – FEB 2026 · AI/ML COMPETITION</span>
+        <h3>Uvuvi-Tek — App Developer, Cooperative University</h3>
+      </div>
+      <div class="gallery-slider">
+        <div class="gallery-track" id="gallery-exp2">
+          <div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-fish" style="font-size:3.5rem;color:#00d8ff;"></i><p><strong>Pond Monitoring Dashboard</strong></p><p>Real-time monitoring of water quality, temperature, dissolved oxygen, and fish health indicators across all registered ponds.</p></div></div>
+          <div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-pencil-ruler" style="font-size:3.5rem;color:#A259FF;"></i><p><strong>Figma UI/UX Design</strong></p><p>Designed complete mobile app wireframes and high-fidelity prototypes in Figma, focusing on accessibility for rural, low-literacy users.</p></div></div>
+          <div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-brain" style="font-size:3.5rem;color:#10B981;"></i><p><strong>ML Model Integration</strong></p><p>Collaborating on data collection pipelines, model training for fish disease detection, and deployment automation for real-time inference.</p></div></div>
+          <div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-map-marked-alt" style="font-size:3.5rem;color:#EA4335;"></i><p><strong>Market Insights & Geolocation</strong></p><p>Integrated Google Maps API for nearby market discovery, live price trend feeds, and direct buyer-to-farmer connectivity.</p></div></div>
+        </div>
+        <button class="gallery-btn prev" onclick="slideGallery('gallery-exp2', -1)">&#8249;</button>
+        <button class="gallery-btn next" onclick="slideGallery('gallery-exp2', 1)">&#8250;</button>
+        <div class="gallery-dots" id="dots-gallery-exp2"></div>
+      </div>
+      <div class="tech-stack">
+        <span class="tech-pill">Flutter</span><span class="tech-pill">FlutterFlow</span><span class="tech-pill">Firebase</span><span class="tech-pill">Supabase</span><span class="tech-pill">Python</span><span class="tech-pill">Figma</span><span class="tech-pill">Google Maps API</span>
+      </div>
     </div>
-    <a href="https://github.com/kira8ke/July-DevOps-Challenge-" target="_blank" class="github-btn">Explore The Challenge</a>
   </div>
-</div>
 
-
-<div class="modal" id="modal3">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal3')">&times;</span>
-    <h3>⚡ Automation Projects Hub</h3>
-    <p>
-      A collection of my n8n workflows built to automate everyday processes for 
-      businesses and individuals. From data handling to notifications and integrations,
-      this hub showcases practical automations you can explore.
-    </p>
-    <ul>
-      <li>Real-world use cases</li>
-      <li>Easy-to-follow workflow breakdowns</li>
-      <li>Code and setup guides</li>
-    </ul>
-    <div class="tech-stack">
-      <span class="tech-pill">n8n</span>
-      <span class="tech-pill">APIs</span>
-      <span class="tech-pill">Automation</span>
+  <div class="modal exp-modal" id="exp-modal-3">
+    <div class="modal-content modal-content--wide">
+      <span class="close" onclick="closeModal('exp-modal-3')">&times;</span>
+      <div class="exp-modal-header">
+        <span class="exp-badge">AUG 2024 – SEP 2024 · WEB DEVELOPER</span>
+        <h3>Elegance Dhobi — Full-Stack Web Developer</h3>
+      </div>
+      <div class="gallery-slider">
+        <div class="gallery-track" id="gallery-exp3">
+          <div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-tshirt" style="font-size:3.5rem;color:#00d8ff;"></i><p><strong>Business Website</strong></p><p>Full-featured laundry management website for Elegance Dhobi in Nyeri — designed, built, and delivered within one month.</p></div></div>
+          <div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-lock" style="font-size:3.5rem;color:#10B981;"></i><p><strong>Secure Login System</strong></p><p>Passwords hashed with bcrypt, secure session management, role-based access for admin and customer portals, CSRF and XSS protection throughout.</p></div></div>
+          <div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-calendar-alt" style="font-size:3.5rem;color:#F59E0B;"></i><p><strong>Booking & Pricing System</strong></p><p>Interactive booking flow with service selection, pickup scheduling, dynamic pricing calculator, and order tracking for customers.</p></div></div>
+          <div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-users-cog" style="font-size:3.5rem;color:#8B5CF6;"></i><p><strong>Employee Management Dashboard</strong></p><p>Admin panel for managing staff, assigning orders, tracking work progress, and generating basic business performance reports.</p></div></div>
+        </div>
+        <button class="gallery-btn prev" onclick="slideGallery('gallery-exp3', -1)">&#8249;</button>
+        <button class="gallery-btn next" onclick="slideGallery('gallery-exp3', 1)">&#8250;</button>
+        <div class="gallery-dots" id="dots-gallery-exp3"></div>
+      </div>
+      <div class="tech-stack">
+        <span class="tech-pill">HTML</span><span class="tech-pill">CSS</span><span class="tech-pill">JavaScript</span><span class="tech-pill">PHP</span><span class="tech-pill">MySQL</span>
+      </div>
+      <a href="https://github.com/kira8ke/Elegance-Dhobi-secure-login-system" target="_blank" class="github-btn">View on GitHub →</a>
     </div>
-    <a href="https://github.com/kira8ke/Automation-Website" target="_blank" class="github-btn">
-      Explore Automations
+  </div>
+
+  <div class="curve-divider"><svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,50 C480,0 960,100 1440,50" stroke="#00d8ff" stroke-width="2" fill="none"/></svg></div>
+
+  <!-- ═══════ SKILLS ═══════ -->
+  <section id="skills" class="skills-section">
+    <div class="section-header">
+      <h2> Skills</h2>
+      <p class="section-sub">The tools and technologies I reach for every day.</p>
+    </div>
+
+    <div class="skill-categories">
+
+      <!-- AI & Automation -->
+      <div class="skill-category-card">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon"><i class="fas fa-robot"></i></div>
+          <div>
+            <h3>AI &amp; Automation</h3>
+            <span class="skill-cat-sub">6 tools I use to build intelligent pipelines</span>
+          </div>
+        </div>
+        <div class="skill-logo-grid">
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/n8n/EA4B71" alt="n8n" width="42" height="42" loading="lazy"></div>
+            <span>n8n</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" width="42" height="42" loading="lazy"></div>
+            <span>Python</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/tensorflow/FF6F00" alt="TensorFlow" width="42" height="42" loading="lazy"></div>
+            <span>TensorFlow</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/scikitlearn/F7931E" alt="scikit-learn" width="42" height="42" loading="lazy"></div>
+            <span>Scikit-learn</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="SQL" width="42" height="42" loading="lazy"></div>
+            <span>SQL</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/googlecloud/4285F4" alt="GCP AIOps" width="42" height="42" loading="lazy"></div>
+            <span>AIOps / GCP</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- DevOps & Cloud -->
+      <div class="skill-category-card">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon"><i class="fas fa-server"></i></div>
+          <div>
+            <h3>DevOps &amp; Cloud</h3>
+            <span class="skill-cat-sub">9 tools powering my infrastructure work</span>
+          </div>
+        </div>
+        <div class="skill-logo-grid">
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" width="42" height="42" loading="lazy"></div>
+            <span>Docker</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/kubernetes/326CE5" alt="Kubernetes" width="42" height="42" loading="lazy"></div>
+            <span>Kubernetes</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/terraform/844FBA" alt="Terraform" width="42" height="42" loading="lazy"></div>
+            <span>Terraform</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/githubactions/2088FF" alt="GitHub Actions" width="42" height="42" loading="lazy"></div>
+            <span>GH Actions</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/amazonaws/FF9900" alt="AWS" width="42" height="42" loading="lazy"></div>
+            <span>AWS</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/cloudflare/F6821F" alt="Cloudflare" width="42" height="42" loading="lazy"></div>
+            <span>Cloudflare</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/prometheus/E6522C" alt="Prometheus" width="42" height="42" loading="lazy"></div>
+            <span>Prometheus</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/grafana/F46800" alt="Grafana" width="42" height="42" loading="lazy"></div>
+            <span>Grafana</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/linux/FCC624" alt="Linux" width="42" height="42" loading="lazy"></div>
+            <span>Linux</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Full-Stack & Web -->
+      <div class="skill-category-card">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon"><i class="fas fa-code"></i></div>
+          <div>
+            <h3>Full-Stack &amp; Web</h3>
+            <span class="skill-cat-sub">10 languages &amp; frameworks I build with</span>
+          </div>
+        </div>
+        <div class="skill-logo-grid">
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5" width="42" height="42" loading="lazy"></div>
+            <span>HTML5</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS3" width="42" height="42" loading="lazy"></div>
+            <span>CSS3</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" width="42" height="42" loading="lazy"></div>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/php/777BB4" alt="PHP" width="42" height="42" loading="lazy"></div>
+            <span>PHP</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/wordpress/21759B" alt="WordPress" width="42" height="42" loading="lazy"></div>
+            <span>WordPress</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/strapi/4945FF" alt="Strapi" width="42" height="42" loading="lazy"></div>
+            <span>Strapi</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/nextdotjs/ffffff" alt="Next.js" width="42" height="42" loading="lazy"></div>
+            <span>Next.js</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/flutter/54C5F8" alt="Flutter" width="42" height="42" loading="lazy"></div>
+            <span>Flutter</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL" width="42" height="42" loading="lazy"></div>
+            <span>MySQL</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/figma/F24E1E" alt="Figma" width="42" height="42" loading="lazy"></div>
+            <span>Figma</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="curve-divider"><svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,50 C480,0 960,100 1440,50" stroke="#00d8ff" stroke-width="2" fill="none"/></svg></div>
+
+  <!-- ═══════ PROJECTS ═══════ -->
+  <section id="projects">
+    <div class="section-header">
+      <h2> Projects</h2>
+      <p class="section-sub">Things I've built, shipped, and learned from.</p>
+    </div>
+
+    <div class="projects-wrapper">
+      <svg id="connection-lines"></svg>
+      <div class="projects-container">
+        <div class="project" id="proj1" onclick="openModal('modal1')">
+          <h3> Smart Fish Farm Management App</h3>
+          <p>Mobile tool for rural fish farmers to monitor ponds, get weather updates, and boost productivity.</p>
+          <div class="tech-tags"><span>Figma</span><span>FlutterFlow</span><span>Flutter</span><span>Google Maps API</span><span>Supabase</span><span>Firebase</span></div>
+        </div>
+        <div class="project" id="proj2" onclick="openModal('modal2')">
+          <h3> DevOps July Challenge 2025</h3>
+          <p>A four-week hands-on DevOps challenge covering CI/CD, Docker, IaC, monitoring, and Kubernetes.</p>
+          <div class="tech-tags"><span>CI/CD</span><span>Docker</span><span>AWS</span><span>Kubernetes</span><span>GitHub Actions</span></div>
+        </div>
+        <div class="project" id="proj3" onclick="openModal('modal3')">
+          <h3> Automation Projects</h3>
+          <p>Powerful workflows built with n8n to automate tasks, integrate tools, and streamline processes.</p>
+          <div class="tech-tags"><span>n8n</span><span>APIs</span><span>Automation</span><span>Low-Code</span><span>Integrations</span></div>
+        </div>
+        <div class="project" id="proj4" onclick="openModal('modal4')">
+          <h3> Secure Login System</h3>
+          <p>A reliable login system with layered security and role-based access control for Elegance Dhobi.</p>
+          <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span></div>
+        </div>
+        <div class="project" id="proj5" onclick="openModal('modal5')">
+          <h3> Resume Builder</h3>
+          <p>A dynamic tool for creating, customizing, and exporting professional resumes with live preview.</p>
+          <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </div>
+        <div class="project" id="proj6" onclick="openModal('modal6')">
+          <h3> Agriventure</h3>
+          <p>An AI-powered platform offering market insights and crop recommendations for farmers.</p>
+          <div class="tech-tags"><span>Canva</span><span>AI/ML</span><span>Research</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Modals -->
+    <div class="modal" id="modal1"><div class="modal-content modal-content--wide"><span class="close" onclick="closeModal('modal1')">&times;</span><h3>🐟 Uvuvi Tek – Smart Fish Farm Management</h3><p>Aquaculture-focused mobile app powered by AI and real-time data.</p><div class="gallery-slider"><div class="gallery-track" id="gallery1"><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-fish" style="font-size:3rem;color:#00d8ff;"></i><p><strong>Pond Dashboard</strong></p><p>Real-time monitoring of water quality, temperature, and fish health metrics across multiple ponds.</p></div></div><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-cloud-sun" style="font-size:3rem;color:#00d8ff;"></i><p><strong>Weather & Environment</strong></p><p>Location-based weather alerts and feeding schedule recommendations.</p></div></div><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-chart-line" style="font-size:3rem;color:#00d8ff;"></i><p><strong>Market Insights</strong></p><p>Price trend analysis and demand forecasts to help farmers sell at the right time.</p></div></div><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-book" style="font-size:3rem;color:#00d8ff;"></i><p><strong>Record Keeping</strong></p><p>Digital logbook for stocking, feeding, harvesting, and expense tracking.</p></div></div></div><button class="gallery-btn prev" onclick="slideGallery('gallery1', -1)">&#8249;</button><button class="gallery-btn next" onclick="slideGallery('gallery1', 1)">&#8250;</button><div class="gallery-dots" id="dots-gallery1"></div></div><div class="tech-stack"><span class="tech-pill">Figma</span><span class="tech-pill">Flutter</span><span class="tech-pill">FlutterFlow</span><span class="tech-pill">Firebase</span><span class="tech-pill">Supabase</span><span class="tech-pill">Python</span><span class="tech-pill">Google Maps API</span></div></div></div>
+
+    <div class="modal" id="modal2"><div class="modal-content modal-content--wide"><span class="close" onclick="closeModal('modal2')">&times;</span><h3>🐳 DevOps July Challenge 2025</h3><p>A month-long hands-on challenge — containers, cloud, monitoring, and orchestration.</p><div class="gallery-slider"><div class="gallery-track" id="gallery2"><div class="gallery-slide"><div class="gallery-placeholder"><i class="fab fa-docker" style="font-size:3rem;color:#2496ED;"></i><p><strong>Week 1 – Dockerization & CI/CD</strong></p><p>Containerized apps and GitHub Actions pipelines for automated build, test, and deploy.</p></div></div><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-cloud" style="font-size:3rem;color:#FF9900;"></i><p><strong>Week 2 – Infrastructure as Code</strong></p><p>AWS infrastructure provisioned with Terraform — VPCs, EC2, S3, security groups.</p></div></div><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-chart-bar" style="font-size:3rem;color:#F46800;"></i><p><strong>Week 3 – Monitoring & Alerting</strong></p><p>Prometheus + Grafana dashboards with automated alerting pipelines.</p></div></div><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-dharmachakra" style="font-size:3rem;color:#326CE5;"></i><p><strong>Week 4 – Kubernetes & Helm</strong></p><p>Microservices deployed to Kubernetes with Helm charts for production-grade orchestration.</p></div></div></div><button class="gallery-btn prev" onclick="slideGallery('gallery2', -1)">&#8249;</button><button class="gallery-btn next" onclick="slideGallery('gallery2', 1)">&#8250;</button><div class="gallery-dots" id="dots-gallery2"></div></div><div class="tech-stack"><span class="tech-pill">Docker</span><span class="tech-pill">GitHub Actions</span><span class="tech-pill">Terraform</span><span class="tech-pill">AWS</span><span class="tech-pill">Prometheus</span><span class="tech-pill">Grafana</span><span class="tech-pill">Kubernetes</span><span class="tech-pill">Helm</span></div><a href="https://github.com/kira8ke/July-DevOps-Challenge-" target="_blank" class="github-btn">Explore The Challenge →</a></div></div>
+
+    <div class="modal" id="modal3"><div class="modal-content modal-content--wide"><span class="close" onclick="closeModal('modal3')">&times;</span><h3>⚙️ n8n Automation Projects Hub</h3><p>Real-world automation workflows — from business processes to AI-powered pipelines.</p><div class="gallery-slider"><div class="gallery-track" id="gallery3"><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-envelope-open-text" style="font-size:3rem;color:#EA4B71;"></i><p><strong>Email Automation Workflow</strong></p><p>Automated email sequences triggered by form submissions, integrating Gmail, Airtable, and Slack.</p></div></div><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-robot" style="font-size:3rem;color:#00d8ff;"></i><p><strong>AI-Powered Lead Qualifier</strong></p><p>n8n workflow capturing leads, running them through an AI classifier, and routing automatically.</p></div></div><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-sync-alt" style="font-size:3rem;color:#34A853;"></i><p><strong>Data Sync Pipeline</strong></p><p>Automated sync between Google Sheets, REST APIs, and a database in real time.</p></div></div><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-bell" style="font-size:3rem;color:#F59E0B;"></i><p><strong>Alert & Monitoring Bot</strong></p><p>Uptime monitor that pushes alerts to Telegram and Slack when services go down.</p></div></div></div><button class="gallery-btn prev" onclick="slideGallery('gallery3', -1)">&#8249;</button><button class="gallery-btn next" onclick="slideGallery('gallery3', 1)">&#8250;</button><div class="gallery-dots" id="dots-gallery3"></div></div><div class="tech-stack"><span class="tech-pill">n8n</span><span class="tech-pill">APIs</span><span class="tech-pill">Automation</span><span class="tech-pill">AI/ML</span><span class="tech-pill">Webhooks</span></div><a href="https://github.com/kira8ke/Automation-Website" target="_blank" class="github-btn">Explore Automations →</a></div></div>
+
+    <div class="modal" id="modal4"><div class="modal-content modal-content--wide"><span class="close" onclick="closeModal('modal4')">&times;</span><h3>🔒 Secure Login System</h3><p>Built for Elegance Dhobi — layered security and role-based access control.</p><div class="gallery-slider"><div class="gallery-track" id="gallery4"><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-sign-in-alt" style="font-size:3rem;color:#00d8ff;"></i><p><strong>Login & Registration</strong></p><p>bcrypt hashed passwords, real-time validation, and secure session management.</p></div></div><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-user-shield" style="font-size:3rem;color:#10B981;"></i><p><strong>Role-Based Access Control</strong></p><p>Separate admin and customer portals with permission-based routing.</p></div></div><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-shield-alt" style="font-size:3rem;color:#8B5CF6;"></i><p><strong>Security Layer</strong></p><p>SQL injection prevention, XSS protection, CSRF token validation on all forms.</p></div></div></div><button class="gallery-btn prev" onclick="slideGallery('gallery4', -1)">&#8249;</button><button class="gallery-btn next" onclick="slideGallery('gallery4', 1)">&#8250;</button><div class="gallery-dots" id="dots-gallery4"></div></div><div class="tech-stack"><span class="tech-pill">HTML</span><span class="tech-pill">CSS</span><span class="tech-pill">JavaScript</span><span class="tech-pill">PHP</span><span class="tech-pill">MySQL</span></div><a href="https://github.com/kira8ke/Elegance-Dhobi-secure-login-system" target="_blank" class="github-btn">Explore Project →</a></div></div>
+
+    <div class="modal" id="modal5"><div class="modal-content modal-content--wide"><span class="close" onclick="closeModal('modal5')">&times;</span><h3>📝 Resume Builder</h3><p>Craft, preview, and export professional resumes — all in the browser, no sign-up needed.</p><div class="gallery-slider"><div class="gallery-track" id="gallery5"><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-edit" style="font-size:3rem;color:#00d8ff;"></i><p><strong>Live Editor</strong></p><p>Real-time editing with instant preview as you type.</p></div></div><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-file-pdf" style="font-size:3rem;color:#E34F26;"></i><p><strong>PDF Export</strong></p><p>One-click clean PDF output with custom print stylesheet.</p></div></div><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-palette" style="font-size:3rem;color:#A259FF;"></i><p><strong>Template Flexibility</strong></p><p>Multiple layouts and color themes to match any style or industry.</p></div></div></div><button class="gallery-btn prev" onclick="slideGallery('gallery5', -1)">&#8249;</button><button class="gallery-btn next" onclick="slideGallery('gallery5', 1)">&#8250;</button><div class="gallery-dots" id="dots-gallery5"></div></div><div class="tech-stack"><span class="tech-pill">HTML</span><span class="tech-pill">CSS</span><span class="tech-pill">JavaScript</span></div><a href="https://github.com/kira8ke/resume-builder" target="_blank" class="github-btn">Explore Project →</a></div></div>
+
+    <div class="modal" id="modal6"><div class="modal-content modal-content--wide"><span class="close" onclick="closeModal('modal6')">&times;</span><h3>🌱 Agriventure</h3><p>AI-powered advisory platform empowering farmers through data-driven insights.</p><div class="gallery-slider"><div class="gallery-track" id="gallery6"><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-seedling" style="font-size:3rem;color:#10B981;"></i><p><strong>Crop Recommendations</strong></p><p>AI-driven suggestions analyzing soil, rainfall, and seasonal patterns.</p></div></div><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-store" style="font-size:3rem;color:#F59E0B;"></i><p><strong>Market Integration</strong></p><p>Direct farmer-to-market connectivity without middlemen.</p></div></div><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-tags" style="font-size:3rem;color:#00d8ff;"></i><p><strong>Pricing Strategy Engine</strong></p><p>Smart pricing suggestions based on supply-demand trends.</p></div></div></div><button class="gallery-btn prev" onclick="slideGallery('gallery6', -1)">&#8249;</button><button class="gallery-btn next" onclick="slideGallery('gallery6', 1)">&#8250;</button><div class="gallery-dots" id="dots-gallery6"></div></div><div class="tech-stack"><span class="tech-pill">Canva</span><span class="tech-pill">PowerPoint</span><span class="tech-pill">Market Research</span><span class="tech-pill">AI/ML Concepts</span></div></div></div>
+
+  </section>
+
+  <div class="curve-divider"><svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,50 C480,0 960,100 1440,50" stroke="#00d8ff" stroke-width="2" fill="none"/></svg></div>
+
+  <!-- ═══════ EDUCATION ═══════ -->
+  <section id="education" class="resume-section">
+    <h2>🎓 Education</h2>
+    <div class="resume-entry">
+      <div class="resume-entry-header">
+        <h3>Cooperative University of Kenya</h3>
+        <span class="duration">2023 – Present</span>
+      </div>
+      <p><strong>B.Sc. in Computer Science</strong></p>
+      <ul>
+        <li>Focus: DevOps, Cybersecurity, Artificial Intelligence &amp; Machine Learning</li>
+        <li>Member of the DevSecOps &amp; AI Club</li>
+        <li>AI/ML Competition Participant — Uvuvi-Tek Agri-Tech App (2025)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ═══════ CERTIFICATIONS ═══════ -->
+  <section class="resume-section" id="certifications">
+    <h2> Certifications</h2>
+    <div class="certs-container">
+      <div class="cert-card"><h3>Huawei LEAP Certification</h3><span class="duration">2024</span><p>Focus on Cloud, AI, and emerging technologies across Africa.</p></div>
+      <div class="cert-card"><h3>CompTIA Linux Essentials</h3><span class="duration">2024</span><p>Mastered command-line tools, Linux administration, and shell scripting.</p></div>
+      <div class="cert-card"><h3>CompTIA+ Certification</h3><span class="duration">2024</span><p>Solid foundation in IT infrastructure, security, troubleshooting, and networking.</p></div>
+      <div class="cert-card"><h3>Infosec: Automation &amp; Hardware</h3><span class="duration">2024</span><p>Hands-on experience in automation, hardware configuration, and bash scripting.</p></div>
+      <div class="cert-card"><h3>System Operations Maintenance</h3><span class="duration">2023</span><p>Trained in maintaining secure, scalable environments in production setups.</p></div>
+    </div>
+  </section>
+
+  <section class="resume-download">
+    <a href="access/Gloria Nyambura_Wanyaga_Resume.docx" download>
+      <button class="resume-btn">📄 Download My Resume</button>
     </a>
-  </div>
-</div>
+  </section>
 
+  <div class="curve-divider"><svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,50 C480,0 960,100 1440,50" stroke="#00d8ff" stroke-width="2" fill="none"/></svg></div>
 
-
-  <!-- Modal 3 -->
-  <div class="modal" id="modal4">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal4')">&times;</span>
-      <h3>🔒 Secure Login System</h3>
-      <p>Built for Elegance Dhobi, this system ensures seamless, secure user authentication and robust access control mechanisms.</p>
-      <ul>
-        <li>Hashed passwords and session management</li>
-        <li>Admin and customer access levels</li>
-        <li>SQL Injection and XSS protection</li>
-      </ul>
-      <div class="tech-stack">
-        <span class="tech-pill">HTML</span><span class="tech-pill">CSS</span>
-        <span class="tech-pill">JavaScript</span><span class="tech-pill">PHP</span>
-        <span class="tech-pill">MySQL</span>
-      </div>
-    <a href="https://github.com/kira8ke/Elegance-Dhobi-secure-login-system" target="_blank" class="github-btn">Explore My Project </a>
-  </div>
-  </div>
-
-  <!-- Modal 4 -->
-  <div class="modal" id="modal5">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal5')">&times;</span>
-      <h3>📝 Resume Builder</h3>
-      <p>A web app that allows users to craft, preview, and export resumes with ease.</p>
-      <ul>
-        <li>Live editing and preview</li>
-        <li>Export to PDF</li>
-        <li>Template flexibility</li>
-      </ul>
-      <div class="tech-stack">
-        <span class="tech-pill">HTML</span><span class="tech-pill">CSS</span>
-        <span class="tech-pill">JavaScript</span>
-      </div>
-    <a href="https://github.com/kira8ke/resume-builder" target="_blank" class="github-btn">Explore My Project </a>
-  </div>
-  </div>
-
-  <!-- Modal 5 -->
-  <div class="modal" id="modal6">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal6')">&times;</span>
-      <h3>🌱 Agriventure</h3>
-      <p>An AI-powered advisory platform empowering farmers through market insights and crop recommendations.</p>
-      <ul>
-        <li>AI concept for data-driven decision-making</li>
-        <li>Farmer-to-market integration</li>
-        <li>Pricing strategy suggestions</li>
-      </ul>
-      <div class="tech-stack">
-        <span class="tech-pill">Canva</span><span class="tech-pill">Powerpoint</span>
-        <span class="tech-pill">Market research</span><span class="tech-pill">AI/ML concepts</span>
-      </div>
+  <!-- ═══════ CONTACT ═══════ -->
+  <section id="contact" class="Contact">
+    <h2>Let's Connect 🤝</h2>
+    <p>I'd love to hear from you! Whether it's a collaboration, a project, or just to say hi 👋</p>
+    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:wanyagagloria43@gmail.com">wanyagagloria43@gmail.com</a></p>
+    <p><i class="fas fa-phone"></i> Phone: <a href="tel:+254743033208">+254 743 033 208</a></p>
+    <div class="contact-links">
+      <a href="https://github.com/kira8ke" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://www.linkedin.com/in/gloria-wanyaga-3b9050267/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://wanyaga.netlify.app/" target="_blank"><i class="fas fa-globe"></i> Portfolio</a>
     </div>
+  </section>
+
+  <button id="scrollToTopBtn" title="Go to top">↑</button>
+
+  <div class="floating-icons">
+    <a href="https://github.com/kira8ke" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/gloria-wanyaga-3b9050267/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="access/Gloria_Nyambura_Wanyaga_Resume.docx" download aria-label="Download Resume"><i class="fas fa-file-download"></i></a>
   </div>
-</section>
 
-
-<!-- Curved Line Divider -->
-<div class="curve-divider">
-  <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
-    <path 
-      d="M0,50 C480,0 960,100 1440,50" 
-      stroke="#00d8ff" 
-      stroke-width="2" 
-      fill="none" />
-  </svg>
-</div>
-
-<section id="education" class="resume-section">
-  <h2>🎓 Education</h2>
-  <div class="resume-entry">
-    <div class="resume-entry-header">
-      <h3>Cooperative University of Kenya</h3>
-      <span class="duration">2023 – Present</span>
-    </div>
-    <p><strong>B.Sc. in Computer Science</strong></p>
-    <ul>
-      <li>Focus: DevOps, Cybersecurity, Artificial Intelligence & Machine Learning</li>
-      <li>Member of the DevSecOps & AI Club</li>
-    </ul>
-  </div>
-</section>
-
-<section class="resume-section" id="certifications">
-  <h2>📜 Certifications</h2>
-
-  <div class="certs-container">
-    <div class="cert-card">
-      <div class="badge">🌍</div>
-      <h3>Huawei LEAP Certification</h3>
-      <span class="duration">2024</span>
-      <p>Focus on Cloud, AI, and emerging technologies across Africa.</p>
-    </div>
-
-    <div class="cert-card">
-      <div class="badge">🐧</div>
-      <h3>CompTIA Linux Essentials</h3>
-      <span class="duration">2024</span>
-      <p>Mastered command line tools, Linux administration basics, and shell scripting.</p>
-    </div>
-
-    <div class="cert-card">
-      <div class="badge">🛡️</div>
-      <h3>CompTIA+ Certification</h3>
-      <span class="duration">2024</span>
-      <p>Solid foundation in IT infrastructure, security, troubleshooting, and networking.</p>
-    </div>
-
-    <div class="cert-card">
-      <div class="badge">⚙️</div>
-      <h3>Infosec: Automation & Hardware</h3>
-      <span class="duration">2024</span>
-      <p>Hands-on experience in automation, hardware configuration, and bash scripting.</p>
-    </div>
-
-    <div class="cert-card">
-      <div class="badge">🧰</div>
-      <h3>System Operations Maintenance</h3>
-      <span class="duration">2023</span>
-      <p>Trained on maintaining secure, scalable environments in production setups.</p>
-    </div>
-
-  </div>
-</section>
-
-
-<section class="resume-download">
-  <a href="access/Gloria Nyambura_Wanyaga_Resume.docx" download>
-    <button class="resume-btn">📄 Download My Resume</button>
-  </a>
-</section>
-
-<!-- Curved Line Divider -->
-<div class="curve-divider">
-  <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
-    <path 
-      d="M0,50 C480,0 960,100 1440,50" 
-      stroke="#00d8ff" 
-      stroke-width="2" 
-      fill="none" />
-  </svg>
-</div>
-
-
-
-  <section id="contact" class ="Contact">
-  <h2>Let's Connect 🤝</h2>
-  <p>I'd love to hear from you! Whether it's a collaboration, a project, or just to say hi 👋</p>
-
-  <p><i class="fas fa-envelope"></i> Email: <a href="mailto:wanyagagloria43@gmail.com">wanyagagloria43@gmail.com</a></p>
-  <p><i class="fas fa-phone"></i> Phone: <a href="tel:+254743033208">+254 743 033 208</a></p>
-
-  <div class="contact-links">
-    <a href="https://github.com/kira8ke" target="_blank">
-      <i class="fab fa-github"></i> GitHub
-    </a>
-    <a href="https://www.linkedin.com/in/gloria-wanyaga-3b9050267/" target="_blank">
-      <i class="fab fa-linkedin"></i> LinkedIn
-    </a>
-  </div>
-</section>
-
-
-  <!-- Scroll to Top Button -->
-<button id="scrollToTopBtn" title="Go to top">↑</button>
-
-<!-- Floating Social Icons -->
-<div class="floating-icons">
-  <!-- GitHub -->
-  <a href="https://github.com/kira8ke" target="_blank" aria-label="GitHub">
-    <i class="fab fa-github"></i>
-  </a>
-
-  <!-- LinkedIn -->
-  <a href="https://www.linkedin.com/in/gloria-wanyaga-3b9050267/" target="_blank" aria-label="LinkedIn">
-    <i class="fab fa-linkedin"></i>
-  </a>
-
-  <!-- Resume Download -->
-  <a href="access/Gloria_Nyambura_Wanyaga_Resume.docx" download aria-label="Download Resume">
-    <i class="fas fa-file-download"></i>
-  </a>
-</div>
-
-
-
-<!-- Loading Spinner -->
-<div id="loader">
-  <div class="spinner"></div>
-</div>
-
-<script>
-function drawMatrixLines() {
-  const svg = document.getElementById('connection-lines');
-  svg.innerHTML = '';
-
-  const ids = ['proj1', 'proj2', 'proj3', 'proj4'];
-  const elements = ids.map(id => document.getElementById(id));
-  const svgRect = svg.getBoundingClientRect();
-
-  function center(el) {
-    const rect = el.getBoundingClientRect();
-    return {
-      x: rect.left + rect.width / 2 - svgRect.left,
-      y: rect.top + rect.height / 2 - svgRect.top
-    };
-  }
-
-  function line(a, b) {
-    const l = document.createElementNS("http://www.w3.org/2000/svg", "line");
-    l.setAttribute("x1", a.x);
-    l.setAttribute("y1", a.y);
-    l.setAttribute("x2", b.x);
-    l.setAttribute("y2", b.y);
-    l.setAttribute("stroke", "#00d8ff");
-    l.setAttribute("stroke-width", "2");
-    l.setAttribute("stroke-opacity", "0.2");
-    svg.appendChild(l);
-  }
-
-  const [p1, p2, p3, p4] = elements.map(center);
-
-  line(p1, p2); // top row
-  line(p3, p4); // bottom row
-  line(p1, p3); // left column
-  line(p2, p4); // right column
-}
-
-window.addEventListener('load', drawMatrixLines);
-window.addEventListener('resize', drawMatrixLines);
-</script>
-
+  <div id="loader"><div class="spinner"></div></div>
 
 </body>
 </html>
