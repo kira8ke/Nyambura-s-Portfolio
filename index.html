@@ -142,7 +142,7 @@
     <div class="exp-grid">
 
       <div class="exp-card">
-        <div class="exp-preview" onclick="openExpModal('exp-modal-1')">
+        <div class="exp-preview">
           <div class="exp-preview-screen">
             <div class="exp-browser-bar">
               <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
@@ -158,7 +158,6 @@
               <p class="exp-preview-label">CI/CD · AWS SES · Cloudflare · WordPress</p>
             </div>
           </div>
-          <div class="exp-hover-overlay"><i class="fas fa-expand-alt"></i> View Details</div>
         </div>
         <div class="exp-meta">
           <span class="exp-badge">MAY 2025 – AUG 2025 · INTERNSHIP</span>
@@ -168,14 +167,12 @@
           <div class="exp-tags">
             <span>GitHub Actions</span><span>AWS SES</span><span>Cloudflare</span><span>WordPress</span><span>Next.js</span><span>Strapi</span>
           </div>
-          <button class="view-project-btn" onclick="openExpModal('exp-modal-1')">
-            <i class="fas fa-external-link-alt"></i> View Project
-          </button>
+
         </div>
       </div>
 
       <div class="exp-card">
-        <div class="exp-preview" onclick="openExpModal('exp-modal-2')">
+        <div class="exp-preview">
           <div class="exp-preview-screen">
             <div class="exp-browser-bar">
               <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
@@ -191,7 +188,6 @@
               <p class="exp-preview-label">Flutter · Firebase · ML · Google Maps</p>
             </div>
           </div>
-          <div class="exp-hover-overlay"><i class="fas fa-expand-alt"></i> View Details</div>
         </div>
         <div class="exp-meta">
           <span class="exp-badge">MAR 2025 – FEB 2026 · AI/ML COMPETITION</span>
@@ -201,14 +197,12 @@
           <div class="exp-tags">
             <span>Flutter</span><span>FlutterFlow</span><span>Firebase</span><span>Supabase</span><span>Figma</span><span>Python</span>
           </div>
-          <button class="view-project-btn" onclick="openExpModal('exp-modal-2')">
-            <i class="fas fa-external-link-alt"></i> View Project
-          </button>
+
         </div>
       </div>
 
       <div class="exp-card">
-        <div class="exp-preview" onclick="openExpModal('exp-modal-3')">
+        <div class="exp-preview">
           <div class="exp-preview-screen">
             <div class="exp-browser-bar">
               <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
@@ -224,7 +218,6 @@
               <p class="exp-preview-label">PHP · MySQL · Secure Auth · Bookings</p>
             </div>
           </div>
-          <div class="exp-hover-overlay"><i class="fas fa-expand-alt"></i> View Details</div>
         </div>
         <div class="exp-meta">
           <span class="exp-badge">AUG 2024 – SEP 2024 · WEB DEVELOPER</span>
@@ -234,9 +227,7 @@
           <div class="exp-tags">
             <span>HTML</span><span>CSS</span><span>PHP</span><span>MySQL</span><span>JavaScript</span>
           </div>
-          <button class="view-project-btn" onclick="openExpModal('exp-modal-3')">
-            <i class="fas fa-external-link-alt"></i> View Project
-          </button>
+
         </div>
       </div>
 
@@ -483,55 +474,108 @@
     <div class="projects-wrapper">
       <svg id="connection-lines"></svg>
       <div class="projects-container">
-        <div class="project" id="proj1" onclick="openModal('modal1')">
-          <h3> Smart Fish Farm Management App</h3>
-          <p>Mobile tool for rural fish farmers to monitor ponds, get weather updates, and boost productivity.</p>
-          <div class="tech-tags"><span>Figma</span><span>FlutterFlow</span><span>Flutter</span><span>Google Maps API</span><span>Supabase</span><span>Firebase</span></div>
+        <div class="project" id="proj1">
+          <div class="proj-preview">
+            <div class="proj-preview-placeholder">
+              <!-- keep existing tech icon display or a placeholder -->
+            </div>
+          </div>
+          <div class="proj-meta">
+            <span class="proj-label">MAY 2025 · MOBILE APP</span>
+            <h3>Smart Fish Farm Management App</h3>
+            <p>Mobile tool for rural fish farmers to monitor ponds, get weather updates, and boost productivity.</p>
+            <div class="tech-tags">
+              <span>Figma</span><span>FlutterFlow</span><span>Flutter</span><span>Firebase</span>
+            </div>
+            <a href="https://github.com/kira8ke" target="_blank" class="proj-visit-btn">
+              <i class="fas fa-external-link-alt"></i> View Project
+            </a>
+          </div>
         </div>
-        <div class="project" id="proj2" onclick="openModal('modal2')">
-          <h3> DevOps July Challenge 2025</h3>
-          <p>A four-week hands-on DevOps challenge covering CI/CD, Docker, IaC, monitoring, and Kubernetes.</p>
-          <div class="tech-tags"><span>CI/CD</span><span>Docker</span><span>AWS</span><span>Kubernetes</span><span>GitHub Actions</span></div>
+        <div class="project" id="proj2">
+          <div class="proj-preview">
+            <div class="proj-preview-placeholder"></div>
+          </div>
+          <div class="proj-meta">
+            <span class="proj-label">JUL 2025 · WEB APP</span>
+            <h3>DevOps July Challenge 2025</h3>
+            <p>A four-week hands-on DevOps challenge covering CI/CD, Docker, IaC, monitoring, and Kubernetes.</p>
+            <div class="tech-tags">
+              <span>CI/CD</span><span>Docker</span><span>AWS</span><span>Kubernetes</span><span>GitHub Actions</span>
+            </div>
+            <a href="https://github.com/kira8ke/July-DevOps-Challenge-" target="_blank" class="proj-visit-btn">
+              <i class="fas fa-external-link-alt"></i> Visit Site
+            </a>
+          </div>
         </div>
-        <div class="project" id="proj3" onclick="openModal('modal3')">
-          <h3> Automation Projects</h3>
-          <p>Powerful workflows built with n8n to automate tasks, integrate tools, and streamline processes.</p>
-          <div class="tech-tags"><span>n8n</span><span>APIs</span><span>Automation</span><span>Low-Code</span><span>Integrations</span></div>
+        <div class="project" id="proj3">
+          <div class="proj-preview">
+            <div class="proj-preview-placeholder"></div>
+          </div>
+          <div class="proj-meta">
+            <span class="proj-label">2025 · AUTOMATION</span>
+            <h3>Automation Projects</h3>
+            <p>Powerful workflows built with n8n to automate tasks, integrate tools, and streamline processes.</p>
+            <div class="tech-tags">
+              <span>n8n</span><span>APIs</span><span>Automation</span><span>Low-Code</span><span>Integrations</span>
+            </div>
+            <a href="https://github.com/kira8ke/Automation-Website" target="_blank" class="proj-visit-btn">
+              <i class="fas fa-external-link-alt"></i> Visit Site
+            </a>
+          </div>
         </div>
-        <div class="project" id="proj4" onclick="openModal('modal4')">
-          <h3> Secure Login System</h3>
-          <p>A reliable login system with layered security and role-based access control for Elegance Dhobi.</p>
-          <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span></div>
+        <div class="project" id="proj4">
+          <div class="proj-preview">
+            <div class="proj-preview-placeholder"></div>
+          </div>
+          <div class="proj-meta">
+            <span class="proj-label">SEP 2024 · WEB APP</span>
+            <h3>Secure Login System</h3>
+            <p>A reliable login system with layered security and role-based access control for Elegance Dhobi.</p>
+            <div class="tech-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span>
+            </div>
+            <a href="https://github.com/kira8ke/Elegance-Dhobi-secure-login-system" target="_blank" class="proj-visit-btn">
+              <i class="fas fa-external-link-alt"></i> Visit Site
+            </a>
+          </div>
         </div>
-        <div class="project" id="proj5" onclick="openModal('modal5')">
-          <h3> Resume Builder</h3>
-          <p>A dynamic tool for creating, customizing, and exporting professional resumes with live preview.</p>
-          <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <div class="project" id="proj5">
+          <div class="proj-preview">
+            <div class="proj-preview-placeholder"></div>
+          </div>
+          <div class="proj-meta">
+            <span class="proj-label">2024 · WEB TOOL</span>
+            <h3>Resume Builder</h3>
+            <p>A dynamic tool for creating, customizing, and exporting professional resumes with live preview.</p>
+            <div class="tech-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <a href="https://github.com/kira8ke/resume-builder" target="_blank" class="proj-visit-btn">
+              <i class="fas fa-external-link-alt"></i> Visit Site
+            </a>
+          </div>
         </div>
-        <div class="project" id="proj6" onclick="openModal('modal6')">
-          <h3> Agriventure</h3>
-          <p>An AI-powered platform offering market insights and crop recommendations for farmers.</p>
-          <div class="tech-tags"><span>Canva</span><span>AI/ML</span><span>Research</span></div>
+        <div class="project" id="proj6">
+          <div class="proj-preview">
+            <div class="proj-preview-placeholder"></div>
+          </div>
+          <div class="proj-meta">
+            <span class="proj-label">2025 · RESEARCH</span>
+            <h3>Agriventure</h3>
+            <p>An AI-powered platform offering market insights and crop recommendations for farmers.</p>
+            <div class="tech-tags">
+              <span>Canva</span><span>AI/ML</span><span>Research</span>
+            </div>
+            <a href="#" target="_blank" class="proj-visit-btn">
+              <i class="fas fa-external-link-alt"></i> Visit Site
+            </a>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Project Modals -->
-    <div class="modal" id="modal1"><div class="modal-content modal-content--wide"><span class="close" onclick="closeModal('modal1')">&times;</span><h3>🐟 Uvuvi Tek – Smart Fish Farm Management</h3><p>Aquaculture-focused mobile app powered by AI and real-time data.</p><div class="gallery-slider"><div class="gallery-track" id="gallery1"><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-fish" style="font-size:3rem;color:#00d8ff;"></i><p><strong>Pond Dashboard</strong></p><p>Real-time monitoring of water quality, temperature, and fish health metrics across multiple ponds.</p></div></div><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-cloud-sun" style="font-size:3rem;color:#00d8ff;"></i><p><strong>Weather & Environment</strong></p><p>Location-based weather alerts and feeding schedule recommendations.</p></div></div><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-chart-line" style="font-size:3rem;color:#00d8ff;"></i><p><strong>Market Insights</strong></p><p>Price trend analysis and demand forecasts to help farmers sell at the right time.</p></div></div><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-book" style="font-size:3rem;color:#00d8ff;"></i><p><strong>Record Keeping</strong></p><p>Digital logbook for stocking, feeding, harvesting, and expense tracking.</p></div></div></div><button class="gallery-btn prev" onclick="slideGallery('gallery1', -1)">&#8249;</button><button class="gallery-btn next" onclick="slideGallery('gallery1', 1)">&#8250;</button><div class="gallery-dots" id="dots-gallery1"></div></div><div class="tech-stack"><span class="tech-pill">Figma</span><span class="tech-pill">Flutter</span><span class="tech-pill">FlutterFlow</span><span class="tech-pill">Firebase</span><span class="tech-pill">Supabase</span><span class="tech-pill">Python</span><span class="tech-pill">Google Maps API</span></div></div></div>
-
-    <div class="modal" id="modal2"><div class="modal-content modal-content--wide"><span class="close" onclick="closeModal('modal2')">&times;</span><h3>🐳 DevOps July Challenge 2025</h3><p>A month-long hands-on challenge — containers, cloud, monitoring, and orchestration.</p><div class="gallery-slider"><div class="gallery-track" id="gallery2"><div class="gallery-slide"><div class="gallery-placeholder"><i class="fab fa-docker" style="font-size:3rem;color:#2496ED;"></i><p><strong>Week 1 – Dockerization & CI/CD</strong></p><p>Containerized apps and GitHub Actions pipelines for automated build, test, and deploy.</p></div></div><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-cloud" style="font-size:3rem;color:#FF9900;"></i><p><strong>Week 2 – Infrastructure as Code</strong></p><p>AWS infrastructure provisioned with Terraform — VPCs, EC2, S3, security groups.</p></div></div><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-chart-bar" style="font-size:3rem;color:#F46800;"></i><p><strong>Week 3 – Monitoring & Alerting</strong></p><p>Prometheus + Grafana dashboards with automated alerting pipelines.</p></div></div><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-dharmachakra" style="font-size:3rem;color:#326CE5;"></i><p><strong>Week 4 – Kubernetes & Helm</strong></p><p>Microservices deployed to Kubernetes with Helm charts for production-grade orchestration.</p></div></div></div><button class="gallery-btn prev" onclick="slideGallery('gallery2', -1)">&#8249;</button><button class="gallery-btn next" onclick="slideGallery('gallery2', 1)">&#8250;</button><div class="gallery-dots" id="dots-gallery2"></div></div><div class="tech-stack"><span class="tech-pill">Docker</span><span class="tech-pill">GitHub Actions</span><span class="tech-pill">Terraform</span><span class="tech-pill">AWS</span><span class="tech-pill">Prometheus</span><span class="tech-pill">Grafana</span><span class="tech-pill">Kubernetes</span><span class="tech-pill">Helm</span></div><a href="https://github.com/kira8ke/July-DevOps-Challenge-" target="_blank" class="github-btn">Explore The Challenge →</a></div></div>
-
-    <div class="modal" id="modal3"><div class="modal-content modal-content--wide"><span class="close" onclick="closeModal('modal3')">&times;</span><h3>⚙️ n8n Automation Projects Hub</h3><p>Real-world automation workflows — from business processes to AI-powered pipelines.</p><div class="gallery-slider"><div class="gallery-track" id="gallery3"><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-envelope-open-text" style="font-size:3rem;color:#EA4B71;"></i><p><strong>Email Automation Workflow</strong></p><p>Automated email sequences triggered by form submissions, integrating Gmail, Airtable, and Slack.</p></div></div><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-robot" style="font-size:3rem;color:#00d8ff;"></i><p><strong>AI-Powered Lead Qualifier</strong></p><p>n8n workflow capturing leads, running them through an AI classifier, and routing automatically.</p></div></div><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-sync-alt" style="font-size:3rem;color:#34A853;"></i><p><strong>Data Sync Pipeline</strong></p><p>Automated sync between Google Sheets, REST APIs, and a database in real time.</p></div></div><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-bell" style="font-size:3rem;color:#F59E0B;"></i><p><strong>Alert & Monitoring Bot</strong></p><p>Uptime monitor that pushes alerts to Telegram and Slack when services go down.</p></div></div></div><button class="gallery-btn prev" onclick="slideGallery('gallery3', -1)">&#8249;</button><button class="gallery-btn next" onclick="slideGallery('gallery3', 1)">&#8250;</button><div class="gallery-dots" id="dots-gallery3"></div></div><div class="tech-stack"><span class="tech-pill">n8n</span><span class="tech-pill">APIs</span><span class="tech-pill">Automation</span><span class="tech-pill">AI/ML</span><span class="tech-pill">Webhooks</span></div><a href="https://github.com/kira8ke/Automation-Website" target="_blank" class="github-btn">Explore Automations →</a></div></div>
-
-    <div class="modal" id="modal4"><div class="modal-content modal-content--wide"><span class="close" onclick="closeModal('modal4')">&times;</span><h3>🔒 Secure Login System</h3><p>Built for Elegance Dhobi — layered security and role-based access control.</p><div class="gallery-slider"><div class="gallery-track" id="gallery4"><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-sign-in-alt" style="font-size:3rem;color:#00d8ff;"></i><p><strong>Login & Registration</strong></p><p>bcrypt hashed passwords, real-time validation, and secure session management.</p></div></div><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-user-shield" style="font-size:3rem;color:#10B981;"></i><p><strong>Role-Based Access Control</strong></p><p>Separate admin and customer portals with permission-based routing.</p></div></div><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-shield-alt" style="font-size:3rem;color:#8B5CF6;"></i><p><strong>Security Layer</strong></p><p>SQL injection prevention, XSS protection, CSRF token validation on all forms.</p></div></div></div><button class="gallery-btn prev" onclick="slideGallery('gallery4', -1)">&#8249;</button><button class="gallery-btn next" onclick="slideGallery('gallery4', 1)">&#8250;</button><div class="gallery-dots" id="dots-gallery4"></div></div><div class="tech-stack"><span class="tech-pill">HTML</span><span class="tech-pill">CSS</span><span class="tech-pill">JavaScript</span><span class="tech-pill">PHP</span><span class="tech-pill">MySQL</span></div><a href="https://github.com/kira8ke/Elegance-Dhobi-secure-login-system" target="_blank" class="github-btn">Explore Project →</a></div></div>
-
-    <div class="modal" id="modal5"><div class="modal-content modal-content--wide"><span class="close" onclick="closeModal('modal5')">&times;</span><h3>📝 Resume Builder</h3><p>Craft, preview, and export professional resumes — all in the browser, no sign-up needed.</p><div class="gallery-slider"><div class="gallery-track" id="gallery5"><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-edit" style="font-size:3rem;color:#00d8ff;"></i><p><strong>Live Editor</strong></p><p>Real-time editing with instant preview as you type.</p></div></div><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-file-pdf" style="font-size:3rem;color:#E34F26;"></i><p><strong>PDF Export</strong></p><p>One-click clean PDF output with custom print stylesheet.</p></div></div><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-palette" style="font-size:3rem;color:#A259FF;"></i><p><strong>Template Flexibility</strong></p><p>Multiple layouts and color themes to match any style or industry.</p></div></div></div><button class="gallery-btn prev" onclick="slideGallery('gallery5', -1)">&#8249;</button><button class="gallery-btn next" onclick="slideGallery('gallery5', 1)">&#8250;</button><div class="gallery-dots" id="dots-gallery5"></div></div><div class="tech-stack"><span class="tech-pill">HTML</span><span class="tech-pill">CSS</span><span class="tech-pill">JavaScript</span></div><a href="https://github.com/kira8ke/resume-builder" target="_blank" class="github-btn">Explore Project →</a></div></div>
-
-    <div class="modal" id="modal6"><div class="modal-content modal-content--wide"><span class="close" onclick="closeModal('modal6')">&times;</span><h3>🌱 Agriventure</h3><p>AI-powered advisory platform empowering farmers through data-driven insights.</p><div class="gallery-slider"><div class="gallery-track" id="gallery6"><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-seedling" style="font-size:3rem;color:#10B981;"></i><p><strong>Crop Recommendations</strong></p><p>AI-driven suggestions analyzing soil, rainfall, and seasonal patterns.</p></div></div><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-store" style="font-size:3rem;color:#F59E0B;"></i><p><strong>Market Integration</strong></p><p>Direct farmer-to-market connectivity without middlemen.</p></div></div><div class="gallery-slide"><div class="gallery-placeholder"><i class="fas fa-tags" style="font-size:3rem;color:#00d8ff;"></i><p><strong>Pricing Strategy Engine</strong></p><p>Smart pricing suggestions based on supply-demand trends.</p></div></div></div><button class="gallery-btn prev" onclick="slideGallery('gallery6', -1)">&#8249;</button><button class="gallery-btn next" onclick="slideGallery('gallery6', 1)">&#8250;</button><div class="gallery-dots" id="dots-gallery6"></div></div><div class="tech-stack"><span class="tech-pill">Canva</span><span class="tech-pill">PowerPoint</span><span class="tech-pill">Market Research</span><span class="tech-pill">AI/ML Concepts</span></div></div></div>
-
-  </section>
-
-  <div class="curve-divider"><svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,50 C480,0 960,100 1440,50" stroke="#00d8ff" stroke-width="2" fill="none"/></svg></div>
+    <div class="curve-divider"><svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,50 C480,0 960,100 1440,50" stroke="#00d8ff" stroke-width="2" fill="none"/></svg></div>
 
   <!-- ═══════ EDUCATION ═══════ -->
   <section id="education" class="resume-section">
@@ -595,3 +639,4 @@
 
 </body>
 </html>
+
