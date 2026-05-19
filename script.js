@@ -39,6 +39,19 @@ document.addEventListener("DOMContentLoaded", () => {
   initAllGalleries();
   initAllSlideshows();
 
+  const featuredProject = document.querySelector('.featured-project');
+  if (featuredProject) {
+    const featuredObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('border-glow');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.4 });
+    featuredObserver.observe(featuredProject);
+  }
+
   /* ─────────────────────────────────────
      TYPING ANIMATION
   ───────────────────────────────────── */
