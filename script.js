@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", highlightSection);
   highlightSection();
   initAllGalleries();
+  initAllSlideshows();
 
   /* ─────────────────────────────────────
      TYPING ANIMATION
@@ -290,6 +291,99 @@ function slideGallery(galleryId, direction) {
   if (!state) return;
   goToSlide(galleryId, state.index + direction);
 }
+
+const slideshowState = {};
+let slideshowAutoPlay = null;
+
+function initAllSlideshows() {
+  document.querySelectorAll('.slideshow-track').forEach(track => {
+    const id = track.id;
+    const slides = track.querySelectorAll('.slide-item');
+    slideshowState[id] = { index: 0, total: slides.length };
+
+    const dotsContainer = document.getElementById(`dots-${id}`);
+    if (dotsContainer) {
+      dotsContainer.innerHTML = '';
+      slides.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.setAttribute('aria-label', `Slide ${i + 1}`);
+        dot.addEventListener('click', () => goToSlideshowSlide(id, i));
+        dotsContainer.appendChild(dot);
+      });
+      updateSlideshowDots(id);
+    }
+  });
+}
+
+function openSlideshow(id) {
+  const overlay = document.getElementById(id);
+  if (!overlay) return;
+  overlay.classList.add('open');
+  overlay.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+  const track = overlay.querySelector('.slideshow-track');
+  if (track) {
+    goToSlideshowSlide(track.id, 0);
+    if (slideshowAutoPlay) clearInterval(slideshowAutoPlay);
+    slideshowAutoPlay = setInterval(() => slideSlideshow(track.id, 1), 1000);
+  }
+}
+
+function closeSlideshow(id) {
+  if (slideshowAutoPlay) {
+    clearInterval(slideshowAutoPlay);
+    slideshowAutoPlay = null;
+  }
+  if (slideshowAutoPlay) {
+    clearInterval(slideshowAutoPlay);
+    slideshowAutoPlay = null;
+  }
+  const overlay = document.getElementById(id);
+  if (!overlay) return;
+  overlay.classList.remove('open');
+  overlay.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+}
+
+function goToSlideshowSlide(trackId, index) {
+  const state = slideshowState[trackId];
+  if (!state) return;
+  state.index = ((index % state.total) + state.total) % state.total;
+  const track = document.getElementById(trackId);
+  if (track) track.style.transform = `translateX(-${state.index * 100}%)`;
+  updateSlideshowDots(trackId);
+}
+
+function slideSlideshow(trackId, direction) {
+  const state = slideshowState[trackId];
+  if (!state) return;
+  goToSlideshowSlide(trackId, state.index + direction);
+}
+
+function updateSlideshowDots(trackId) {
+  const dotsContainer = document.getElementById(`dots-${trackId}`);
+  if (!dotsContainer) return;
+  const buttons = dotsContainer.querySelectorAll('button');
+  buttons.forEach((dot, index) => {
+    dot.classList.toggle('active', index === slideshowState[trackId].index);
+  });
+}
+
+window.addEventListener('click', e => {
+  const overlay = document.getElementById('design-slideshow');
+  if (overlay && overlay.classList.contains('open') && e.target === overlay) {
+    closeSlideshow('design-slideshow');
+  }
+});
+
+window.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    const overlay = document.getElementById('design-slideshow');
+    if (overlay && overlay.classList.contains('open')) {
+      closeSlideshow('design-slideshow');
+    }
+  }
+});
 
 /* ════════════════════════════
    CONNECTION LINES (projects)
